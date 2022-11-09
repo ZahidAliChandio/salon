@@ -21,7 +21,11 @@ const AccordionFAQ = ({ items }) => {
           >
             <div className="flex items-center justify-between font-medium">
               {item.title}
-              {!(index === activeIndex) && <Plus />}
+              {!(index === activeIndex) ? (
+                <Plus />
+              ) : (
+                <i className="fa-solid fa-minus"></i>
+              )}
             </div>
             <Transition
               in={index === activeIndex}
@@ -49,7 +53,11 @@ const AccordionFAQ = ({ items }) => {
       </Fragment>
     );
   });
-  return <div className="grid grid-cols-2 gap-4 mt-2 items-stretch">{renderedItems}</div>;
+  return (
+    <div className="grid grid-cols-2 gap-4 mt-2 items-stretch">
+      {renderedItems}
+    </div>
+  );
 };
 
 export default AccordionFAQ;
