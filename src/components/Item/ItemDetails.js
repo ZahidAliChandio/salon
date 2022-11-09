@@ -1,5 +1,6 @@
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Close from "../../assets/images/close.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -11,9 +12,11 @@ const ItemDetails = ({ images, points, setShowDetail }) => {
   return (
     <div className="absolute -top-8 -right-12 w-full bg-white item-detail px-4 py-10 rounded-lg overflow-hidden detail-shadow z-20">
       <button
-        className="absolute top-3 lg:top-3 right-3 flex w-5 justify-center text-sm text-white bg-black rounded-full font-bold"
+        className="absolute top-3 lg:top-3 right-3"
         onClick={() => onClickHandler()}
-      >x</button>
+      >
+        <img src={Close} alt="close" />
+      </button>
       <div className="flex items-center justify-center w-full h-1/2 overflow-hidden border-2">
         <Swiper
           navigation={true}

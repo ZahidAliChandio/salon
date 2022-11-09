@@ -1,4 +1,4 @@
-import AccordionFAQ from "../../components/UI/AccordianFAQ";
+import AccordionFAQ from "./AccordianFAQ";
 
 const FAQs = () => {
   const items = [

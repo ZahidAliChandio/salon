@@ -1,5 +1,5 @@
 import Item from "../../components/Item/Item";
-import Accordion from "../../components/UI/Accordion";
+import Accordion from "./Accordion";
 
 const items = [
   { title: "Facial & Clean up", content: "first content are here" },

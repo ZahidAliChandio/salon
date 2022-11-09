@@ -2,6 +2,7 @@ import Services from "./pages/Services/Services";
 import About from "./pages/About/About";
 import FAQs from "./pages/FAQs/FAQs";
 import Appointments from "./pages/Appointments/Appointments";
+import Profile from "./pages/Profile/Profile";
 
 const App = () => {
   return (
@@ -9,7 +10,8 @@ const App = () => {
       {/* <Services /> */}
       {/* <About /> */}
       {/* <FAQs/> */}
-      <Appointments/>
+      {/* <Appointments/> */}
+      <Profile />
     </div>
   );
 };

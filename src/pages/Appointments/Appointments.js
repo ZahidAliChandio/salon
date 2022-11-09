@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AppointmentButton from "../../components/UI/AppointmentButton";
-import Client from "../../components/UI/Client";
+import Client from "./Client";
 
 const Appointments = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -19,6 +19,7 @@ const Appointments = () => {
             <AppointmentButton
               onClick={() => onClickHandler(index)}
               isActive={isActive}
+              key={index}
             >
               {action}
             </AppointmentButton>

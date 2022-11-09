@@ -19,9 +19,9 @@
 .accordian-shadow{
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
 }
-.accordian-size{
+/* .accordian-size{
   width: 48%;
-}
+} */
 .close-modal {
   animation: close 200ms linear forwards;
 }
