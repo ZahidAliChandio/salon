@@ -1,14 +1,6 @@
-import { ReactComponent as Timer } from "../../assets/images/timer.svg";
-import Pic from "../../assets/images/pic.png";
-import { useState } from "react";
-
 const UserProfile = (props) => {
-  const [showDetails, setShowDetails] = useState(false);
-  const onClickHandler = () => {
-    setShowDetails(true);
-  };
   return (
-    <div className="relative flex items-center justify-between gap-4 w-1/2 pt-2 pb-3 pr-2 m-2 border-b border-gray-400">
+    <div className="relative flex items-center justify-between gap-4 w-full  pt-2 pb-3 pr-2 m-2 border-b border-gray-400">
       <div className="flex items-center gap-4">
         <div className="align-middle items-center text-center h-[36px] w-[36px] rounded-full overflow-hidden">
           {/* <img src={Pic} alt="Client" className="" /> */}
@@ -20,10 +12,7 @@ const UserProfile = (props) => {
         </div>
       </div>
       {props.edit && (
-        <i
-          className="p-1 fa-solid fa-pen text-[10px] text-gray-400 cursor-pointer"
-          onClick={() => onClickHandler()}
-        ></i>
+        <i className="p-1 fa-solid fa-pen text-[10px] text-gray-400 cursor-pointer"></i>
       )}
     </div>
   );
