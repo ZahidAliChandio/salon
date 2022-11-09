@@ -4,7 +4,7 @@ import UserProfile from "./UserProfile";
 
 const Profile = () => {
   return (
-    <div className="text-center lg:text-left px-10 lg:px-20 py-4">
+    <div className="text-center lg:text-left px-6 md:px-10 lg:px-20 py-4">
       <h2 className="my-8 text-2xl font-bold">My Profile</h2>
       <div className="flex justify-between flex-col-reverse md:flex-row gap-8">
         <div className="w-full">
@@ -20,7 +20,7 @@ const Profile = () => {
         </div>
         <UserProfile />
       </div>
-      <div className="flex gap-4 mt-8">
+      <div className="flex gap-4 mt-8 justify-center md:justify-start">
         <ButtonProfile className="bg-green-700 text-white">SAVE</ButtonProfile>
         <ButtonProfile className="bg-zinc-200 text-black">CANCEL</ButtonProfile>
       </div>
