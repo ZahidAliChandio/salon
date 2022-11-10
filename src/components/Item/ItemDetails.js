@@ -12,7 +12,7 @@ const ItemDetails = ({ images, points, setShowDetail }) => {
   return (
     <div className="absolute -top-8 -right-12 w-full bg-white item-detail px-4 py-10 rounded-lg overflow-hidden detail-shadow z-20">
       <button
-        className="absolute top-3 lg:top-3 right-3"
+        className="absolute top-2 right-2 w-6"
         onClick={() => onClickHandler()}
       >
         <img src={Close} alt="close" />
@@ -26,7 +26,7 @@ const ItemDetails = ({ images, points, setShowDetail }) => {
         >
           {images.map((image, index) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 <img src={image} alt="Detailed" className="rounded" />
               </SwiperSlide>
             );
@@ -52,9 +52,9 @@ const ItemDetails = ({ images, points, setShowDetail }) => {
       </div>
       <hr className="my-6" />
       <ul>
-        {points.map((point) => {
+        {points.map((point,index) => {
           return (
-            <li className="flex items-center pl-1">
+            <li className="flex items-center pl-1" key={index}>
               <span className="-left-2 relative inline-block bg-black rounded-full bullet-size"></span>
               <span className="text-sm">{point}</span>
             </li>

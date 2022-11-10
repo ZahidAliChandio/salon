@@ -1,14 +1,16 @@
-import { ReactComponent as Timer } from "../../assets/images/timer.svg";
-import Pic from "../../assets/images/pic.png";
 import { useState } from "react";
+import Pic from "../../assets/images/pic.png";
+import { ReactComponent as Timer } from "../../assets/images/timer.svg";
+import Card from "../../components/UI/Card";
 import ClientDetails from "./ClientDetails";
+
 const Client = (props) => {
   const [showDetails, setShowDetails] = useState(false);
   const onClickHandler = () => {
     setShowDetails(true);
   };
   return (
-    <div className="relative inline-flex items-center gap-4 py-2 px-4 w-fit accordian-shadow rounded-xl m-2">
+    <Card>
       <div className="align-middle items-center text-center h-[70px] w-[70px] rounded-full overflow-hidden">
         <img src={Pic} alt="Client" className="" />
       </div>
@@ -33,8 +35,8 @@ const Client = (props) => {
         className="absolute top-2 right-2 p-1 fas fa-chevron-right cursor-pointer"
         onClick={() => onClickHandler()}
       ></i>
-      {showDetails && <ClientDetails setShowDetail={setShowDetails}/>}
-    </div>
+      {showDetails && <ClientDetails setShowDetail={setShowDetails} />}
+    </Card>
   );
 };
 export default Client;
