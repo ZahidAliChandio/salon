@@ -1,6 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Gill";
+  src: url("./static/fonts/Gill Sans Light.otf");
+  src: url("./static/fonts/Gill Sans Bold.otf");
+}
 
 .item-detail {
   height: 500px;
