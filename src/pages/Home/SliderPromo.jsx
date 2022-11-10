@@ -4,7 +4,7 @@ const SliderPromo = (props) => {
   return (
     <div className="w-[552px] h-[318px] rounded-xl">
       <img
-        className="w-[552px] h-[318px] absolute -z-10 rounded-xl"
+        className="w-[552px] h-[318px] absolute -z-10 rounded-xl object-cover"
         src={sliderImg}
         alt=""
       />

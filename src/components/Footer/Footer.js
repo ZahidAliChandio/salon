@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="flex items-center justify-center h-[517px] border text-white bg-green-700 mt-20">
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 md:gap:24 lg:gap-32 xl:gap-40">
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 sm:gap-8 md:gap:24 lg:gap-32 xl:gap-40">
         <div className="flex flex-col gap-2">
           <h3 className="font-medium">Cities availabe In</h3>
           <span className=" text-sm">Delhi</span>

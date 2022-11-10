@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import MiniNav from "../../components/Navbar/Mininav";
@@ -151,15 +151,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      {/* <div className="flex flex-wrap gap-2 sm:gap-4 md:gap-8 mt-8 ml-12 justify-center text-lg">
-        <Link to="/">Home</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/appointments">Appointments</Link>
-        <Link to="/about">About</Link>
-        <Link to="/faqs">FAQs</Link>
-        <Link to="/profile">Profile</Link>
-      </div> */}
+    <Fragment>
       <div className="sticky w-full z-30">
         <Navbar />
         <div className="flex flex-wrap bg-white drop-shadow-sm shadow-[#0000001F] justify-center gap-10 pb-[34px] pt-[24px] border shadow-2xl">
@@ -190,24 +182,24 @@ const Home = () => {
           })}
         </Swiper>
       </div>
-      <div className="lg:py-2 lg:px-[40px] p-0 bg-[#F4F4F4] mb-12">
+      <div className="lg:py-2 p-0 bg-[#F4F4F4] mb-12">
         <h2 className="text-[28px] font-semibold text-center py-[40px]">
           Quick Checkout
         </h2>
-        <div className="sm:px-[16px] md:px-[30px]  bg-[#F4F4F4] z-index-10 py-4">
+        <div className=" bg-[#F4F4F4] z-index-10 py-4">
           <Swiper
             pagination={{
               type: "fraction",
             }}
             navigation={true}
             modules={[Navigation]}
-            className="mySwiper !px-6 !overflow-visible"
+            className="mySwiper !px-10 !text-center !py-8"
             slidesPerView={slidesPerView}
-            spaceBetween={20}
+            spaceBetween={40}
           >
             {checkoutData.map((d) => {
               return (
-                <SwiperSlide className="text-left rounded-xl" key={d.id}>
+                <SwiperSlide className="rounded-xl" key={d.id}>
                   <Checkout key={d.id} data={d} />
                 </SwiperSlide>
               );
@@ -216,7 +208,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[#006400]">
+      <div className="bg-[#006400] px-20">
         <h1 className="text-[28px] pt-[40px] text-white text-center">
           Services @ 404
         </h1>
@@ -226,9 +218,9 @@ const Home = () => {
           }}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper !p-4 !w-[80%] !bg-none translate-y-24"
+          className="mySwiper !py-4 !px-12 !bg-none translate-y-24"
           slidesPerView={slidesPerView}
-          spaceBetween={20}
+          spaceBetween={55}
         >
           {checkoutData.map((d) => {
             return (
@@ -239,31 +231,31 @@ const Home = () => {
           })}
         </Swiper>
       </div>
-      <div className="flex flex-wrap md:mx-[164px] mx-8 items-center pt-32 md:justify-between justify-start">
+      <div className="flex flex-wrap items-center pt-32 px-20 md:justify-between justify-start">
         <h2 className="text-[28px] font-semibold">Diffrent types of facials</h2>
         <button className="text-[#006400] font-bold">View All</button>
+        <Swiper
+          pagination={{
+            type: "fraction",
+          }}
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper !py-4 !px-12 !bg-none"
+          slidesPerView={slidesPerView}
+          spaceBetween={55}
+        >
+          {diffMakeups.map((d) => {
+            return (
+              <SwiperSlide className="text-left rounded-xl" key={d.id}>
+                <ServiceSlider2 data={d} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
-      <Swiper
-        pagination={{
-          type: "fraction",
-        }}
-        navigation={true}
-        modules={[Navigation]}
-        className="mySwiper !p-4 !w-[80%] !bg-none"
-        slidesPerView={slidesPerView}
-        spaceBetween={20}
-      >
-        {diffMakeups.map((d) => {
-          return (
-            <SwiperSlide className="text-left rounded-xl" key={d.id}>
-              <ServiceSlider2 data={d} />
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
       <Whyus />
       <Getapp />
-    </>
+    </Fragment>
   );
 };
 export default Home;
