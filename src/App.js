@@ -6,7 +6,7 @@ import Appointments from "./pages/Appointments/Appointments";
 import Profile from "./pages/Profile/Profile";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
-import Navbar from "./components/Navbar/Navbar";
+import Address from "./pages/Address/Address"
 import Navigation from "./components/Navigation/Navigation";
 
 const App = () => {
@@ -15,11 +15,12 @@ const App = () => {
       <Navigation/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/appointments" element={<Appointments />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/faqs" element={<FAQs />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/faqs" element={<FAQs />} />
+        <Route path="/address" element={<Address />} />
       </Routes>
       <Footer />
     </div>

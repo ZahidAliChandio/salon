@@ -5,9 +5,10 @@ const Navigation = () => {
       <Link to="/">Home</Link>
       <Link to="/services">Services</Link>
       <Link to="/appointments">Appointments</Link>
+      <Link to="/profile">Profile</Link>
       <Link to="/about">About</Link>
       <Link to="/faqs">FAQs</Link>
-      <Link to="/profile">Profile</Link>
+      <Link to="/address">Address</Link>
     </div>
   );
 };

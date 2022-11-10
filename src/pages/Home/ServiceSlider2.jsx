@@ -1,7 +1,6 @@
 import AddButton from "../../components/UI/AddButton";
 
 const ServiceSlider2 = (props) => {
-  console.log(props);
   return (
     <div className="bg-white p-[14px] rounded-md accordian-shadow">
       {/* <img src="" alt="" /> */}

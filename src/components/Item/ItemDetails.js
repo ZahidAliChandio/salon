@@ -10,7 +10,7 @@ const ItemDetails = ({ images, points, setShowDetail }) => {
     setShowDetail(false);
   };
   return (
-    <div className="absolute -top-8 -right-12 w-full bg-white item-detail px-4 py-10 rounded-lg overflow-hidden detail-shadow z-20">
+    <div className="absolute -top-8 -right-2 md:-right-6 lg:-right-8 w-full bg-white item-detail px-4 py-10 rounded-lg overflow-hidden detail-shadow z-20">
       <button
         className="absolute top-2 right-2 w-6"
         onClick={() => onClickHandler()}

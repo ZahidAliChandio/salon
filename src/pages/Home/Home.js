@@ -7,6 +7,7 @@ import Checkout from "./Checkout";
 import ServiceSlider from "./ServiceSlider";
 import ServiceSlider2 from "./ServiceSlider2";
 import Whyus from "./Whyus";
+import FAQs from "../FAQs/FAQs"
 import Getapp from "./Getapp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -254,6 +255,7 @@ const Home = () => {
         </Swiper>
       </div>
       <Whyus />
+      <FAQs/>
       <Getapp />
     </Fragment>
   );

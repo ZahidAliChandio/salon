@@ -21,7 +21,7 @@ const Navbar = () => {
           className="focus:outline-none w-full h-[36px]"
         />
         <button className="px-[10px]">
-          <i class="fas fa-times-circle text-sm text-[#C7C7C7]"></i>
+          <i className="fas fa-times-circle text-sm text-[#C7C7C7]"></i>
         </button>
       </div>
       <div className="flex space-x-6">
