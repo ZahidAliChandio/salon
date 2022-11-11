@@ -14,7 +14,7 @@ const Getapp = () => {
             <span className="flex space-x-2 ml-4 sm:ml-0">
               {/* <img src={check} className="bg-[#006400]" alt="" /> */}
               <input type="checkbox" name="" id="" className="cursor-pointer" />
-              <p className="text-[13px] font-montserrat">Phone</p>
+              <p className="text-[13px] font-bold font-montserrat">Phone</p>
             </span>
           </div>
           <div className=" flex justify-between items-center my-3 pl-3 pr-1 sm:px-3 w-11/12 h-[40px] sm:h-[50px] border-2 rounded-3xl bg-white border-[#C7C7C7]">

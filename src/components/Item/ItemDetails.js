@@ -5,9 +5,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const ItemDetails = ({ images, points, setShowDetail }) => {
+const ItemDetails = ({ images, itemDetails, setShowDetailId }) => {
   const onClickHandler = () => {
-    setShowDetail(false);
+    setShowDetailId(null);
   };
   return (
     <div className="absolute -top-8 -right-2 md:-right-6 lg:-right-8 w-full bg-white item-detail px-4 py-10 rounded-lg overflow-hidden detail-shadow z-20">
@@ -17,7 +17,7 @@ const ItemDetails = ({ images, points, setShowDetail }) => {
       >
         <img src={Close} alt="close" />
       </button>
-      <div className="flex items-center justify-center w-full h-1/2 overflow-hidden border-2">
+      <div className="flex items-center justify-center w-full h-1/2 overflow-hidden">
         <Swiper
           navigation={true}
           modules={[Navigation]}
@@ -37,25 +37,25 @@ const ItemDetails = ({ images, points, setShowDetail }) => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </h4>
       <div className="flex gap-2 my-3 text-sm">
-        <span className="font-bold">₹1,500</span>
+        <span className="font-bold">₹{itemDetails.currentPrice}</span>
         <span className="text-gray-600">
-          <strike>₹3,500</strike>
+          <strike>₹{itemDetails.previousPrice}</strike>
         </span>
         <span className="flex gap-1 font-bold text-green-600">
           <span>Save</span>
-          <span>₹2000</span>
+          <span>₹{itemDetails.save}</span>
         </span>
         <span className="flex gap-1 items-center font-bold text-yellow-400">
           <i className="fas fa-clock"></i>
-          <span>60 mins</span>
+          <span>{itemDetails.time}</span>
         </span>
       </div>
       <hr className="my-6" />
       <ul>
-        {points.map((point,index) => {
+        {itemDetails.detailBullets.map((point, index) => {
           return (
             <li className="flex items-center pl-1" key={index}>
-              <span className="-left-2 relative inline-block bg-black rounded-full bullet-size"></span>
+              <span className="-left-2 relative inline-block bg-black rounded-full border w-2 h-2"></span>
               <span className="text-sm">{point}</span>
             </li>
           );
