@@ -6,13 +6,15 @@ import Appointments from "./pages/Appointments/Appointments";
 import Profile from "./pages/Profile/Profile";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
-import Address from "./pages/Address/Address"
+import Address from "./pages/Address/Address";
 import Navigation from "./components/Navigation/Navigation";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
     <div className="App">
-      <Navigation/>
+      <Navigation />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/appointments" element={<Appointments />} />

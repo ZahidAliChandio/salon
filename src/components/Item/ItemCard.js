@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Pic from "../../assets/images/pic.png";
 import ItemDetails from "./ItemDetails";

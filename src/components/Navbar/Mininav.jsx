@@ -1,4 +1,4 @@
-const Mininav = (props) => {
+const MiniNav = (props) => {
   return (
     <div className="flex flex-wrap flex-col text-center items-center z-30 font-gillsans">
       <p className="bg-[#EDEDED] w-[80px] h-[80px] rounded-full mb-2"></p>
@@ -7,4 +7,4 @@ const Mininav = (props) => {
   );
 };
 
-export default Mininav;
+export default MiniNav;

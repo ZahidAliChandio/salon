@@ -1,13 +1,11 @@
 import { Fragment, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
-import MiniNav from "../../components/Navbar/Mininav";
 import SliderPromo from "./SliderPromo";
 import Checkout from "./Checkout";
 import ServiceSlider from "./ServiceSlider";
 import ServiceSlider2 from "./ServiceSlider2";
 import Whyus from "./Whyus";
-import FAQs from "../FAQs/FAQs"
+import FAQs from "../FAQs/FAQs";
 import Getapp from "./Getapp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -17,13 +15,6 @@ import { Pagination, Navigation } from "swiper";
 
 const Home = () => {
   const [slidesPerView, setslidesPerView] = useState(3);
-
-  let miniNavArr = [
-    { id: 0, img: null, details: "Salon at home" },
-    { id: 1, img: null, details: "Hair Styling" },
-    { id: 2, img: null, details: "Super Sale" },
-    { id: 3, img: null, details: "Super Sale" },
-  ];
   let miniSliderpromo = [
     {
       id: 0,
@@ -61,9 +52,10 @@ const Home = () => {
       heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
       li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
       li2: "a Rica Waxing - Full arms & Full legs",
-      amount: "₹1, 500",
+      currentPrice: "₹1, 500",
       oldAmount: "₹3,500",
       save: "₹2,000",
+      amount: 1,
     },
     {
       id: 1,
@@ -71,9 +63,10 @@ const Home = () => {
       heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
       li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
       li2: "a Rica Waxing - Full arms & Full legs",
-      amount: "₹1, 500",
+      currentPrice: "₹1, 500",
       oldAmount: "₹3,500",
       save: "₹2,000",
+      amount:1
     },
     {
       id: 2,
@@ -81,9 +74,10 @@ const Home = () => {
       heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
       li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
       li2: "a Rica Waxing - Full arms & Full legs",
-      amount: "₹1, 500",
+      currentPrice: "₹1, 500",
       oldAmount: "₹3,500",
       save: "₹2,000",
+      amount:1
     },
     {
       id: 3,
@@ -91,9 +85,10 @@ const Home = () => {
       heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
       li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
       li2: "a Rica Waxing - Full arms & Full legs",
-      amount: "₹1, 500",
+      currentPrice: "₹1, 500",
       oldAmount: "₹3,500",
       save: "₹2,000",
+      amount:1
     },
     {
       id: 4,
@@ -101,38 +96,17 @@ const Home = () => {
       heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
       li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
       li2: "a Rica Waxing - Full arms & Full legs",
-      amount: "₹1, 500",
+      currentPrice: "₹1, 500",
       oldAmount: "₹3,500",
       save: "₹2,000",
+      amount:1
     },
   ];
   const diffMakeups = [
-    { id: 0, type: "Fruit Facial" },
-    { id: 1, type: "O3+ Facial" },
-    { id: 2, type: "Sara gold Facial" },
-    { id: 3, type: "New Facial" },
-  ];
-  const faqItems = [
-    {
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur sed lorem vitae tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sit amet luctus sapien, ac scelerisque nibh. Pellentesque hendrerit mauris et laoreet laoreet. Proin ornare sollicitudin metus, vitae sagittis augue dapibus facilisis. In non massa quis arcu pulvinar tempor. Sed lacinia justo in ligula ultrices, ut consequat augue molestie.",
-    },
-    {
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur sed lorem vitae tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sit amet luctus sapien, ac scelerisque nibh. Pellentesque hendrerit mauris et laoreet laoreet. Proin ornare sollicitudin metus, vitae sagittis augue dapibus facilisis. In non massa quis arcu pulvinar tempor. Sed lacinia justo in ligula ultrices, ut consequat augue molestie.",
-    },
-    {
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur sed lorem vitae tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sit amet luctus sapien, ac scelerisque nibh. Pellentesque hendrerit mauris et laoreet laoreet. Proin ornare sollicitudin metus, vitae sagittis augue dapibus facilisis. In non massa quis arcu pulvinar tempor. Sed lacinia justo in ligula ultrices, ut consequat augue molestie.",
-    },
-    {
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur sed lorem vitae tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sit amet luctus sapien, ac scelerisque nibh. Pellentesque hendrerit mauris et laoreet laoreet. Proin ornare sollicitudin metus, vitae sagittis augue dapibus facilisis. In non massa quis arcu pulvinar tempor. Sed lacinia justo in ligula ultrices, ut consequat augue molestie.",
-    },
+    { id: 1, type: "Fruit Facial", amount: 1 },
+    { id: 2, type: "O3+ Facial", amount: 1 },
+    { id: 3, type: "Sara gold Facial", amount: 1 },
+    { id: 4, type: "New Facial", amount: 1 },
   ];
 
   useEffect(() => {
@@ -153,14 +127,6 @@ const Home = () => {
 
   return (
     <Fragment>
-      <div className="sticky w-full z-30">
-        <Navbar />
-        <div className="flex flex-wrap bg-white drop-shadow-sm shadow-[#0000001F] justify-center gap-10 pb-[34px] pt-[24px] border shadow-2xl">
-          {miniNavArr.map((n) => {
-            return <MiniNav key={n.id} data={n} />;
-          })}
-        </div>
-      </div>
       <div className="lg:pl-[140px] md:pl-[50px] pl-[16px] pb-[40px] pt-[40px] bg-[#0064001A]">
         <Swiper
           className="mySwiper"
@@ -201,7 +167,7 @@ const Home = () => {
             {checkoutData.map((d) => {
               return (
                 <SwiperSlide className="rounded-xl" key={d.id}>
-                  <Checkout key={d.id} data={d} />
+                  <Checkout data={d} />
                 </SwiperSlide>
               );
             })}
@@ -255,7 +221,7 @@ const Home = () => {
         </Swiper>
       </div>
       <Whyus />
-      <FAQs/>
+      <FAQs />
       <Getapp />
     </Fragment>
   );
