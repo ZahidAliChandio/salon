@@ -126,7 +126,7 @@ const Home = () => {
 
   return (
     <Fragment>
-      <div className="lg:px-[80px] md:px-[50px] px-[16px] pb-[40px] pt-[40px] bg-[#0064001A] border-2 border-red-500">
+      <div className="lg:px-[80px] md:px-[50px] px-[16px] pb-[40px] pt-[40px] bg-[#0064001A]">
         <Swiper
           className="mySwiper"
           slidesPerView={slidesPerView}
