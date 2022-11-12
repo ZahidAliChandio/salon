@@ -65,7 +65,7 @@ const Home = () => {
       currentPrice: "₹1, 500",
       oldAmount: "₹3,500",
       save: "₹2,000",
-      amount:1
+      amount: 1,
     },
     {
       id: 2,
@@ -76,7 +76,7 @@ const Home = () => {
       currentPrice: "₹1, 500",
       oldAmount: "₹3,500",
       save: "₹2,000",
-      amount:1
+      amount: 1,
     },
     {
       id: 3,
@@ -87,7 +87,7 @@ const Home = () => {
       currentPrice: "₹1, 500",
       oldAmount: "₹3,500",
       save: "₹2,000",
-      amount:1
+      amount: 1,
     },
     {
       id: 4,
@@ -98,7 +98,7 @@ const Home = () => {
       currentPrice: "₹1, 500",
       oldAmount: "₹3,500",
       save: "₹2,000",
-      amount:1
+      amount: 1,
     },
   ];
   const diffMakeups = [
@@ -174,7 +174,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[#006400] px-20">
+      <div className="bg-[#006400] px-2 sm:px-8 md:px-16 xl:px-20">
         <h1 className="text-[28px] pt-[40px] text-white text-center">
           Services @ 404
         </h1>
@@ -184,7 +184,7 @@ const Home = () => {
           }}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper !py-4 !px-12 !bg-none translate-y-24"
+          className="mySwiper !py-4 !px-8 !sm:px-12 !bg-none translate-y-24"
           slidesPerView={slidesPerView}
           spaceBetween={55}
         >
@@ -197,16 +197,20 @@ const Home = () => {
           })}
         </Swiper>
       </div>
-      <div className="flex flex-wrap items-center pt-32 px-20 md:justify-between justify-start">
-        <h2 className="text-[28px] font-semibold">Diffrent types of facials</h2>
-        <button className="text-[#006400] font-bold">View All</button>
+      <div className="flex flex-wrap items-center pt-32 px-2 sm:px-8 md:px-16 xl:px-20 md:justify-between justify-start">
+        <div className="flex w-full justify-between px-4">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold ">
+            Different types of facials
+          </h2>
+          <button className="text-[#006400] font-bold">View All</button>
+        </div>
         <Swiper
           pagination={{
             type: "fraction",
           }}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper !py-4 !px-12 !bg-none"
+          className="mySwiper !py-4 !px-8 !sm:px-12 !bg-none"
           slidesPerView={slidesPerView}
           spaceBetween={55}
         >
