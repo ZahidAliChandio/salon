@@ -3,7 +3,7 @@ import logo from "../../assets/images/chevron-right.svg";
 import search from "../../assets/images/search.svg";
 import shop from "../../assets/images/cart.svg";
 import user from "../../assets/images/user.svg";
-import MiniNav from "./MiniNav";
+import MiniNavbar from "./MiniNavbar";
 
 
 const Navbar = () => {
@@ -43,7 +43,7 @@ const Navbar = () => {
           <div className="relative flex space-x-2 items-center">
             <img className="w-[19px] h-[19px]" src={shop} alt="" />
             <p className="absolute bg-[#006400] rounded-full w-[15px] h-[15px] text-[11px] text-center top-1 right-[22px] text-white">
-              {totalItems>0?totalItems:0}
+              {totalItems > 0 ? totalItems : 0}
             </p>
             <p className="text-[#006400] font-bold text-[12px]">Cart</p>
           </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
       </div>
       <div className="flex flex-wrap bg-white drop-shadow-sm shadow-[#0000001F] justify-center gap-10 pb-[34px] pt-[24px] border shadow-2xl">
         {miniNavArr.map((n) => {
-          return <MiniNav key={n.id} data={n} />;
+          return <MiniNavbar key={n.id} data={n} />;
         })}
       </div>
     </div>
