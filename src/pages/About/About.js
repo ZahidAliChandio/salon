@@ -13,7 +13,7 @@ const About = () => {
             Sed lacinia lacus sed auctor vestibulum. Praesent sapien dolor,
             suscipit ut elementum cursus, interdum cursus sem. Etiam ac aliquet
             mauris. Phasellus nec hendrerit tellus. Vestibulum in pretium eros.
-            Etiam ut tincidunt nisi. In hac habitasse platea dictumst. Nunc
+            Etiam ut tincidunt nisi. In hac habitasse plate dictumst. Nunc
             cursus orci ut tincidunt auctor. Duis placerat, magna dignissim
             tempus sollicitudin, lacus eros consequat neque, et interdum risus
             purus sit amet massa. Aenean eu placerat libero, quis aliquet leo.

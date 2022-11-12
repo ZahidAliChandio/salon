@@ -1,5 +1,4 @@
 import { Fragment, useEffect, useState } from "react";
-import Navbar from "../../components/Navbar/Navbar";
 import SliderPromo from "./SliderPromo";
 import Checkout from "./Checkout";
 import ServiceSlider from "./ServiceSlider";
