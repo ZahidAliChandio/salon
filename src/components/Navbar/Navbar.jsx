@@ -3,7 +3,6 @@ import logo from "../../assets/images/chevron-right.svg";
 import search from "../../assets/images/search.svg";
 import shop from "../../assets/images/cart.svg";
 import user from "../../assets/images/user.svg";
-import MiniNavbar from "./MiniNavbar";
 
 
 const Navbar = () => {
@@ -12,12 +11,6 @@ const Navbar = () => {
     return curNum + item.amount;
   }, 0)
 
-  let miniNavArr = [
-    { id: 0, img: null, details: "Salon at home" },
-    { id: 1, img: null, details: "Hair Styling" },
-    { id: 2, img: null, details: "Super Sale" },
-    { id: 3, img: null, details: "Super Sale" },
-  ];
   return (
     <div className=" w-full z-30">
       <div className="flex justify-around gap-4 lg:gap-0 w-full flex-wrap items-center pt-[25px] pb-[35px] bg-white border-b-2 border-[#C7C7C7] font-gillsans">
@@ -52,11 +45,6 @@ const Navbar = () => {
             <img src={user} alt="" />
           </button>
         </div>
-      </div>
-      <div className="flex flex-wrap bg-white drop-shadow-sm shadow-[#0000001F] justify-center gap-10 pb-[34px] pt-[24px] border shadow-2xl">
-        {miniNavArr.map((n) => {
-          return <MiniNavbar key={n.id} data={n} />;
-        })}
       </div>
     </div>
   );

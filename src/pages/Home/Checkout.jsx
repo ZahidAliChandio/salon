@@ -24,7 +24,7 @@ const Checkout = (props) => {
               </li>
             </ul>
             <div className="flex gap-2 my-3 text-sm">
-              <span className="font-bold">{props.data.amount}</span>
+              <span className="font-bold">{props.data.currentPrice}</span>
               <span className="text-gray-600">
                 <strike>{props.data.oldAmount}</strike>
               </span>

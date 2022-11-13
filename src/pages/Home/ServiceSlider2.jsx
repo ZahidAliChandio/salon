@@ -6,7 +6,7 @@ const ServiceSlider2 = (props) => {
       {/* <img src="" alt="" /> */}
       <div className="w-full h-[188px] rounded-md bg-[#EFEFEF]"></div>
       <p className="text-sm font-bold mt-2 text-center 2xl:text-left">{props.data.type}</p>
-      <div className="flex flex-col gap-2 my-3 text-sm items-center 2xl:flex-row">
+      <div className="flex flex-col justify-between gap-2 my-3 text-sm items-center px-0 sm:px-8 md:px-0 sm:flex-row md:flex-col">
         <div className="flex gap-2">
           <span className="font-bold">₹1,500</span>
           <span className="text-gray-600">

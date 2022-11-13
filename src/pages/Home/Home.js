@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment } from "react";
 import SliderPromo from "./SliderPromo";
 import Checkout from "./Checkout";
 import ServiceSlider from "./ServiceSlider";
@@ -10,10 +10,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import MiniNavbar from "../../components/Navbar/MiniNavbar";
 import { Pagination, Navigation } from "swiper";
 
 const Home = () => {
-  const [slidesPerView, setslidesPerView] = useState(3);
+  let miniNavArr = [
+    { id: 0, img: null, details: "Salon at home" },
+    { id: 1, img: null, details: "Hair Styling" },
+    { id: 2, img: null, details: "Super Sale" },
+    { id: 3, img: null, details: "Super Sale" },
+  ];
   let miniSliderpromo = [
     {
       id: 0,
@@ -100,6 +106,28 @@ const Home = () => {
       save: "₹2,000",
       amount: 1,
     },
+    {
+      id: 5,
+      img: null,
+      heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
+      li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
+      li2: "a Rica Waxing - Full arms & Full legs",
+      currentPrice: "₹1, 500",
+      oldAmount: "₹3,500",
+      save: "₹2,000",
+      amount: 1,
+    },
+    {
+      id: 6,
+      img: null,
+      heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
+      li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
+      li2: "a Rica Waxing - Full arms & Full legs",
+      currentPrice: "₹1, 500",
+      oldAmount: "₹3,500",
+      save: "₹2,000",
+      amount: 1,
+    },
   ];
   const diffMakeups = [
     { id: 1, type: "Fruit Facial", amount: 1 },
@@ -108,29 +136,24 @@ const Home = () => {
     { id: 4, type: "New Facial", amount: 1 },
   ];
 
-  useEffect(() => {
-    function slides() {
-      if (window.screen.width >= 1300) {
-        setslidesPerView(4);
-      } else if (window.screen.width >= 900) {
-        setslidesPerView(3);
-      } else if (window.screen.width >= 600) {
-        setslidesPerView(2);
-      } else {
-        setslidesPerView(1);
-      }
-    }
-
-    window.addEventListener("resize", slides);
-  }, []);
-
   return (
     <Fragment>
+      <div className="flex flex-wrap bg-white drop-shadow-sm shadow-[#0000001F] justify-center gap-10 pb-[34px] pt-[24px] border shadow-2xl">
+        {miniNavArr.map((n) => {
+          return <MiniNavbar key={n.id} data={n} />;
+        })}
+      </div>
       <div className="lg:px-[80px] md:px-[50px] px-[16px] pb-[40px] pt-[40px] bg-[#0064001A]">
         <Swiper
           className="mySwiper"
-          slidesPerView={slidesPerView}
-          spaceBetween={30}
+          breakpoints={{
+            1536: { slidesPerView: 4, spaceBetween: 50 },
+            1280: { slidesPerView: 3, spaceBetween: 60 },
+            1024: { slidesPerView: 2, spaceBetween: 70 },
+            768: { slidesPerView: 2, spaceBetween: 80 },
+            640: { slidesPerView: 1, spaceBetween: 10 },
+            320: { slidesPerView: 1, spaceBetween: 10 },
+          }}
           pagination={{
             clickable: true,
           }}
@@ -139,7 +162,7 @@ const Home = () => {
           {miniSliderpromo.map((s) => {
             return (
               <SwiperSlide
-                className="text-left bg-[#0064001A] rounded-lg mb-[50px]"
+                className="text-left bg-[#0064001A] rounded-lg mb-[50px] flex justify-center px-0"
                 key={s.id}
               >
                 <SliderPromo data={s} />
@@ -159,9 +182,15 @@ const Home = () => {
             }}
             navigation={true}
             modules={[Navigation]}
-            className="mySwiper !px-10 !text-center !py-8"
-            slidesPerView={slidesPerView}
-            spaceBetween={40}
+            className="mySwiper !px-12 !md:px-8 !text-center !py-8 "
+            breakpoints={{
+              1536: { slidesPerView: 5, spaceBetween: 50 },
+              1280: { slidesPerView: 4, spaceBetween: 60 },
+              1024: { slidesPerView: 3, spaceBetween: 70 },
+              768: { slidesPerView: 2, spaceBetween: 80 },
+              640: { slidesPerView: 1, spaceBetween: 90 },
+              320: { slidesPerView: 1, spaceBetween: 120 },
+            }}
           >
             {checkoutData.map((d) => {
               return (
@@ -184,9 +213,15 @@ const Home = () => {
           }}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper !py-4 !px-8 !sm:px-12 !bg-none translate-y-24"
-          slidesPerView={slidesPerView}
-          spaceBetween={55}
+          className="mySwiper !py-4 !px-12 !md:px-8  !bg-none translate-y-24"
+          breakpoints={{
+            1536: { slidesPerView: 5, spaceBetween: 50 },
+            1280: { slidesPerView: 4, spaceBetween: 60 },
+            1024: { slidesPerView: 3, spaceBetween: 70 },
+            768: { slidesPerView: 2, spaceBetween: 80 },
+            640: { slidesPerView: 1, spaceBetween: 90 },
+            320: { slidesPerView: 1, spaceBetween: 120 },
+          }}
         >
           {checkoutData.map((d) => {
             return (
@@ -210,9 +245,15 @@ const Home = () => {
           }}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper !py-4 !px-8 !sm:px-12 !bg-none"
-          slidesPerView={slidesPerView}
-          spaceBetween={55}
+          className="mySwiper !py-4 !px-12 !md:px-8 !bg-none"
+          breakpoints={{
+            1536: { slidesPerView: 5, spaceBetween: 50 },
+            1280: { slidesPerView: 4, spaceBetween: 60 },
+            1024: { slidesPerView: 3, spaceBetween: 70 },
+            768: { slidesPerView: 2, spaceBetween: 80 },
+            640: { slidesPerView: 1, spaceBetween: 90 },
+            320: { slidesPerView: 1, spaceBetween: 120 },
+          }}
         >
           {diffMakeups.map((d) => {
             return (
