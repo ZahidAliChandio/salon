@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className=" w-full z-30">
       <div className="flex justify-around gap-4 lg:gap-0 w-full flex-wrap items-center pt-[25px] pb-[35px] bg-white border-b-2 border-[#C7C7C7] font-gillsans">
         <div className="mx-1">
-          <img src={logo} alt="Logo" />
+          {/* <img src={logo} alt="Logo" /> */}
         </div>
         <div className="w-3/4 flex border-2 border-[#C7C7C7] rounded-3xl px-2">
           <button className="px-[10px]">
