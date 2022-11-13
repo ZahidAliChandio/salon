@@ -182,7 +182,7 @@ const Home = () => {
             }}
             navigation={true}
             modules={[Navigation]}
-            className="mySwiper !px-12 !md:px-8 !text-center !py-8 "
+            className="mySwiper !px-12 !md:px-8 !text-center !py-8"
             breakpoints={{
               1536: {
                 slidesPerView: diffMakeups.length > 5 ? 5 : diffMakeups.length,
@@ -198,7 +198,7 @@ const Home = () => {
               },
               768: {
                 slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
-                spaceBetween: 80,
+                spaceBetween: 50,
               },
               640: { slidesPerView: 1, spaceBetween: 90 },
               320: { slidesPerView: 1, spaceBetween: 120 },
@@ -241,7 +241,7 @@ const Home = () => {
             },
             768: {
               slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
-              spaceBetween: 80,
+              spaceBetween: 70,
             },
             640: { slidesPerView: 1, spaceBetween: 90 },
             320: { slidesPerView: 1, spaceBetween: 120 },
@@ -281,7 +281,7 @@ const Home = () => {
             },
             1024: {
               slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
-              spaceBetween: 70,
+              spaceBetween: 50,
             },
             768: {
               slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
