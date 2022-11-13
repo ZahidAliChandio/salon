@@ -50,7 +50,7 @@ const Home = () => {
       text2Cont: "amet.",
     },
   ];
-  const checkoutData = [
+  const itemArray = [
     {
       id: 0,
       img: null,
@@ -184,15 +184,27 @@ const Home = () => {
             modules={[Navigation]}
             className="mySwiper !px-12 !md:px-8 !text-center !py-8 "
             breakpoints={{
-              1536: { slidesPerView: 5, spaceBetween: 50 },
-              1280: { slidesPerView: 4, spaceBetween: 60 },
-              1024: { slidesPerView: 3, spaceBetween: 70 },
-              768: { slidesPerView: 2, spaceBetween: 80 },
+              1536: {
+                slidesPerView: diffMakeups.length > 5 ? 5 : diffMakeups.length,
+                spaceBetween: 50,
+              },
+              1280: {
+                slidesPerView: diffMakeups.length >= 4 ? 4 : diffMakeups.length,
+                spaceBetween: 60,
+              },
+              1024: {
+                slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
+                spaceBetween: 70,
+              },
+              768: {
+                slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
+                spaceBetween: 80,
+              },
               640: { slidesPerView: 1, spaceBetween: 90 },
               320: { slidesPerView: 1, spaceBetween: 120 },
             }}
           >
-            {checkoutData.map((d) => {
+            {itemArray.map((d) => {
               return (
                 <SwiperSlide className="rounded-xl" key={d.id}>
                   <Checkout data={d} />
@@ -215,15 +227,27 @@ const Home = () => {
           modules={[Navigation]}
           className="mySwiper !py-4 !px-12 !md:px-8  !bg-none translate-y-24"
           breakpoints={{
-            1536: { slidesPerView: 5, spaceBetween: 50 },
-            1280: { slidesPerView: 4, spaceBetween: 60 },
-            1024: { slidesPerView: 3, spaceBetween: 70 },
-            768: { slidesPerView: 2, spaceBetween: 80 },
+            1536: {
+              slidesPerView: diffMakeups.length > 5 ? 5 : diffMakeups.length,
+              spaceBetween: 50,
+            },
+            1280: {
+              slidesPerView: diffMakeups.length >= 4 ? 4 : diffMakeups.length,
+              spaceBetween: 60,
+            },
+            1024: {
+              slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
+              spaceBetween: 70,
+            },
+            768: {
+              slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
+              spaceBetween: 80,
+            },
             640: { slidesPerView: 1, spaceBetween: 90 },
             320: { slidesPerView: 1, spaceBetween: 120 },
           }}
         >
-          {checkoutData.map((d) => {
+          {itemArray.map((d) => {
             return (
               <SwiperSlide className="text-left rounded-xl" key={d.id}>
                 <ServiceSlider data={d} />
@@ -233,11 +257,11 @@ const Home = () => {
         </Swiper>
       </div>
       <div className="flex flex-wrap items-center pt-32 px-2 sm:px-8 md:px-16 xl:px-20 md:justify-between justify-start">
-        <div className="flex w-full justify-between px-4">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold ">
+        <div className="flex w-full justify-between px-8">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-center">
             Different types of facials
           </h2>
-          <button className="text-[#006400] font-bold">View All</button>
+          <button className="text-[#006400] font-bold text-sm sm:text-lg">View All</button>
         </div>
         <Swiper
           pagination={{
@@ -247,10 +271,22 @@ const Home = () => {
           modules={[Navigation]}
           className="mySwiper !py-4 !px-12 !md:px-8 !bg-none"
           breakpoints={{
-            1536: { slidesPerView: 5, spaceBetween: 50 },
-            1280: { slidesPerView: 4, spaceBetween: 60 },
-            1024: { slidesPerView: 3, spaceBetween: 70 },
-            768: { slidesPerView: 2, spaceBetween: 80 },
+            1536: {
+              slidesPerView: diffMakeups.length > 5 ? 5 : diffMakeups.length,
+              spaceBetween: 50,
+            },
+            1280: {
+              slidesPerView: diffMakeups.length >= 4 ? 4 : diffMakeups.length,
+              spaceBetween: 60,
+            },
+            1024: {
+              slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
+              spaceBetween: 70,
+            },
+            768: {
+              slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
+              spaceBetween: 80,
+            },
             640: { slidesPerView: 1, spaceBetween: 90 },
             320: { slidesPerView: 1, spaceBetween: 120 },
           }}
