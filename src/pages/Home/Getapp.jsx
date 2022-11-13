@@ -8,7 +8,7 @@ const Getapp = () => {
         <div className=" text-center sm:text-left mx-4 sm:mx-0 lg:mr-20">
           <div className="flex flex-col justify-center gap-2 sm:justify-start">
             <h1 className="text-[28px] font-bold">Get the SaloTym app</h1>
-            <p className="text-[14px]">
+            <p className="text-[14px] px-4">
               We will send you a link, open it on your phone to download the app
             </p>
             <span className="flex space-x-2 ml-4 sm:ml-0">
