@@ -273,7 +273,7 @@ const Home = () => {
           navigation={false}
           modules={[Navigation]}
           className="mySwiper !py-4 !bg-none"
-          breakpoints={{
+          breakpoints={{  
             1280: {
               slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
             },
