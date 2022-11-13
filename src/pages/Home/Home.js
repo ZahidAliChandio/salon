@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useCallback, useRef } from "react";
 import SliderPromo from "./SliderPromo";
 import Checkout from "./Checkout";
 import ServiceSlider from "./ServiceSlider";
@@ -6,12 +6,14 @@ import ServiceSlider2 from "./ServiceSlider2";
 import Whyus from "./Whyus";
 import FAQs from "../FAQs/FAQs";
 import Getapp from "./Getapp";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import MiniNavbar from "../../components/Navbar/MiniNavbar";
 import { Pagination, Navigation } from "swiper";
+import NextBtn from "../../components/buttons/NextBtn";
+import PrevBtn from "../../components/buttons/PrevBtn";
 
 const Home = () => {
   let miniNavArr = [
@@ -175,12 +177,12 @@ const Home = () => {
         <h2 className="text-[28px] font-semibold text-center py-[40px]">
           Quick Checkout
         </h2>
-        <div className=" bg-[#F4F4F4] z-index-10 py-4">
+        <div className=" relative bg-[#F4F4F4] py-4">
           <Swiper
             pagination={{
               type: "fraction",
             }}
-            navigation={true}
+            navigation={false}
             modules={[Navigation]}
             className="mySwiper !text-center !py-8"
             breakpoints={{
@@ -200,6 +202,10 @@ const Home = () => {
             }}
             spaceBetween={20}
           >
+            <div className="absolute flex justify-between w-full top-36 z-20">
+              <NextBtn />
+              <PrevBtn />
+            </div>
             {itemArray.map((d) => {
               return (
                 <SwiperSlide className="rounded-xl" key={d.id}>
@@ -219,7 +225,7 @@ const Home = () => {
           pagination={{
             type: "fraction",
           }}
-          navigation={true}
+          navigation={false}
           modules={[Navigation]}
           className="mySwiper !py-4 !bg-none translate-y-24"
           breakpoints={{
@@ -238,6 +244,10 @@ const Home = () => {
           }}
           spaceBetween={14}
         >
+          <div className="absolute flex justify-between w-full top-36 z-20">
+            <NextBtn />
+            <PrevBtn />
+          </div>
           {itemArray.map((d) => {
             return (
               <SwiperSlide className="text-left rounded-xl" key={d.id}>
@@ -260,13 +270,10 @@ const Home = () => {
           pagination={{
             type: "fraction",
           }}
-          navigation={true}
+          navigation={false}
           modules={[Navigation]}
           className="mySwiper !py-4 !bg-none"
           breakpoints={{
-            1536: {
-              slidesPerView: diffMakeups.length > 4 ? 4 : diffMakeups.length,
-            },
             1280: {
               slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
             },
@@ -279,6 +286,10 @@ const Home = () => {
           }}
           spaceBetween={14}
         >
+          <div className="absolute flex justify-between w-full top-36 z-20">
+            <NextBtn />
+            <PrevBtn />
+          </div>
           {diffMakeups.map((d) => {
             return (
               <SwiperSlide className="text-left rounded-xl" key={d.id}>

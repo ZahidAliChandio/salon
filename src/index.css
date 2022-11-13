@@ -30,6 +30,9 @@
 .close-modal {
   animation: close 200ms linear forwards;
 }
+.swiper-button-disabled {
+  display: none;
+}
 @keyframes close {
   0% {
     transform: translateY(0px);
