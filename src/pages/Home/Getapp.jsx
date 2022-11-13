@@ -4,22 +4,21 @@ import AddButton from "../../components/UI/AddButton";
 const Getapp = () => {
   return (
     <div className="mt-6">
-      <div className="h-[390px] flex justify-center items-center lg:justify-end rounded-lg bg-[#FAFAFA] accordian-shadow px-20 md:px-0">
-        <div className=" text-center sm:text-left sm:mx-0 lg:mr-20 px-12">
-          <div className="flex flex-col justify-center gap-2 sm:justify-start">
+      <div className="h-[390px] flex justify-center items-center lg:justify-end rounded-lg bg-[#FAFAFA] accordian-shadow px-4 sm:px-8 md:px-0">
+        <div className="flex flex-col items-center justify-center text-center sm:text-left sm:mx-0 lg:mr-20 w-full sm:w-fit">
+          <div className="flex flex-col justify-center gap-2 sm:justify-start w-full">
             <h1 className="text-[28px] font-bold">Get the SaloTym app</h1>
             <p className="text-[14px]">
               We will send you a link, open it on your phone to download the app
             </p>
-            <span className="flex space-x-2 ml-4 sm:ml-0">
-              {/* <img src={check} className="bg-[#006400]" alt="" /> */}
+            <span className="flex space-x-2 ml-8 sm:ml-0 justify-self-start">
               <input type="checkbox" name="" id="" className="cursor-pointer" />
               <p className="text-[13px] font-bold font-montserrat">Phone</p>
             </span>
           </div>
-          <div className=" flex justify-between items-center my-3 pl-3 pr-1 sm:px-3 w-11/12 h-[40px] sm:h-[50px] border-2 rounded-3xl bg-white border-[#C7C7C7]">
+          <div className="flex justify-between items-center my-3 pl-3 pr-1 sm:px-3 w-11/12 h-[40px] sm:h-[50px] border-2 rounded-3xl bg-white border-[#C7C7C7]">
             <input
-              className="focus:outline-none bg-none"
+              className="focus:outline-none bg-none text-sm sm:text-auto"
               placeholder="Email"
               type="email"
               name=""
