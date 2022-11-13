@@ -11,7 +11,6 @@ const AccordionFAQ = ({ items }) => {
     setActiveIndex(newIndex);
   };
   const renderedItems = items.map((item, index) => {
-    // const active = index === activeIndex ? "active" : "";
     return (
       <Fragment key={index}>
         <div className="seperator">
