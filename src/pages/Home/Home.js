@@ -171,7 +171,7 @@ const Home = () => {
           })}
         </Swiper>
       </div>
-      <div className="lg:py-2 p-0 bg-[#F4F4F4] mb-12">
+      <div className="lg:py-2 p-0 bg-[#F4F4F4] mb-12 px-2 sm:px-12 md:px-16 xl:px-20">
         <h2 className="text-[28px] font-semibold text-center py-[40px]">
           Quick Checkout
         </h2>
@@ -182,27 +182,23 @@ const Home = () => {
             }}
             navigation={true}
             modules={[Navigation]}
-            className="mySwiper !px-12 !md:px-8 !text-center !py-8"
+            className="mySwiper !text-center !py-8"
             breakpoints={{
               1536: {
                 slidesPerView: diffMakeups.length > 5 ? 5 : diffMakeups.length,
-                spaceBetween: 50,
               },
               1280: {
                 slidesPerView: diffMakeups.length >= 4 ? 4 : diffMakeups.length,
-                spaceBetween: 60,
               },
               1024: {
-                slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
-                spaceBetween: 70,
+                slidesPerView: diffMakeups.length >= 4 ? 4 : diffMakeups.length,
               },
               768: {
                 slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
-                spaceBetween: 50,
               },
-              640: { slidesPerView: 1, spaceBetween: 90 },
-              320: { slidesPerView: 1, spaceBetween: 120 },
+              640: { slidesPerView: 1 },
             }}
+            spaceBetween={20}
           >
             {itemArray.map((d) => {
               return (
@@ -215,7 +211,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[#006400] px-2 sm:px-8 md:px-16 xl:px-20">
+      <div className="bg-[#006400] px-8 sm:px-20 md:px-24 lg:px-32 xl:px-40 2xl:px-48">
         <h1 className="text-[28px] pt-[40px] text-white text-center">
           Services @ 404
         </h1>
@@ -225,27 +221,22 @@ const Home = () => {
           }}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper !py-4 !px-12 !md:px-8  !bg-none translate-y-24"
+          className="mySwiper !py-4 !bg-none translate-y-24"
           breakpoints={{
             1536: {
-              slidesPerView: diffMakeups.length > 5 ? 5 : diffMakeups.length,
-              spaceBetween: 50,
+              slidesPerView: diffMakeups.length > 4 ? 4 : diffMakeups.length,
             },
             1280: {
-              slidesPerView: diffMakeups.length >= 4 ? 4 : diffMakeups.length,
-              spaceBetween: 60,
+              slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
             },
             1024: {
-              slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
-              spaceBetween: 70,
+              slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
             },
             768: {
               slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
-              spaceBetween: 70,
             },
-            640: { slidesPerView: 1, spaceBetween: 90 },
-            320: { slidesPerView: 1, spaceBetween: 120 },
           }}
+          spaceBetween={14}
         >
           {itemArray.map((d) => {
             return (
@@ -256,12 +247,14 @@ const Home = () => {
           })}
         </Swiper>
       </div>
-      <div className="flex flex-wrap items-center pt-32 px-2 sm:px-8 md:px-16 xl:px-20 md:justify-between justify-start">
-        <div className="flex w-full justify-between px-8">
+      <div className="flex flex-wrap items-center justify-start pt-32 px-8 sm:px-20 md:px-24 lg:px-32 xl:px-40 2xl:px-48 md:justify-between">
+        <div className="flex w-full justify-between">
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-center">
             Different types of facials
           </h2>
-          <button className="text-[#006400] font-bold text-sm sm:text-lg">View All</button>
+          <button className="text-[#006400] font-bold text-sm sm:text-lg">
+            View All
+          </button>
         </div>
         <Swiper
           pagination={{
@@ -269,27 +262,22 @@ const Home = () => {
           }}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper !py-4 !px-12 !md:px-8 !bg-none"
+          className="mySwiper !py-4 !bg-none"
           breakpoints={{
             1536: {
-              slidesPerView: diffMakeups.length > 5 ? 5 : diffMakeups.length,
-              spaceBetween: 50,
+              slidesPerView: diffMakeups.length > 4 ? 4 : diffMakeups.length,
             },
             1280: {
-              slidesPerView: diffMakeups.length >= 4 ? 4 : diffMakeups.length,
-              spaceBetween: 60,
+              slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
             },
             1024: {
-              slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
-              spaceBetween: 50,
+              slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
             },
             768: {
               slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
-              spaceBetween: 80,
             },
-            640: { slidesPerView: 1, spaceBetween: 90 },
-            320: { slidesPerView: 1, spaceBetween: 120 },
           }}
+          spaceBetween={14}
         >
           {diffMakeups.map((d) => {
             return (

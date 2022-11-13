@@ -33,11 +33,11 @@ const ItemCard = ({ itemDetails, showDetailId, setShowDetailId }) => {
       <div className="w-full overflow-hidden rounded-xl">
         <img src={Pic} alt="item" className="w-full md:h-56 object-cover" />
       </div>
-      <h4 className="text-sm font-medium mt-2 mb-1">{itemDetails.title}</h4>
+      <h4 className="text-sm font-medium mt-2 mb-1 font-gillsans">{itemDetails.title}</h4>
       <ul>
         {itemDetails.bullets.map((item, index) => {
           return (
-            <li className="flex items-center pl-1" key={index}>
+            <li className="flex items-center pl-1 font-montserrat font-medium" key={index}>
               <span className="-left-1 relative inline-block bg-black rounded-full border w-2 h-2"></span>
               <span className="text-sm">{item}</span>
             </li>

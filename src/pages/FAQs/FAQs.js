@@ -24,10 +24,10 @@ const FAQs = () => {
     },
   ];
   return (
-    <div className="py-10 px-8 sm:px-12 md:px-20">
+    <div className="py-10 px-8 sm:px-12 md:px-20 font-gillsans">
       <div>
-        <h2 className="text-3xl font-bold">FAQs</h2>
-        <p className="my-3">
+        <h2 className="text-3xl">FAQs</h2>
+        <p className="my-5">
           If you have any further questions you can contact us
         </p>
       </div>

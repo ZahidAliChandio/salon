@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -25,7 +25,7 @@
   padding-bottom: 0;
 }
 .accordian-shadow {
-  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 6px #0000001f;
 }
 .close-modal {
   animation: close 200ms linear forwards;
