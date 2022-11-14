@@ -1,11 +1,11 @@
 const About = () => {
   return (
-    <div className="py-4 px-8 sm:px-10 lg:px-16">
+    <div className="py-4 px-8 sm:px-10 md:px-16 lg:px-20">
       <div className="bg-gray-200 h-56 my-12"></div>
-      <div className="grid gap-24 grid-cols-1 md:grid-cols-2">
-        <div className="flex flex-col gap-4 text-center md:col-span-2">
-          <h2 className="text-3xl font-bold">Heading</h2>
-          <p className="px-2 md:px-3">
+      <div className="grid gap-24 grid-cols-1 md:grid-cols-2 font-gillsans">
+        <div className="flex flex-col gap-2 sm:gap-6 text-center md:col-span-2">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold">Heading</h2>
+          <p className="px-2 md:px-24 text-[12px] md:text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean est
             mi, posuere in congue vel, pellentesque ut lorem. Etiam sit amet
             mattis ex. Sed et mauris et quam consequat varius in vel mauris.
@@ -22,9 +22,9 @@ const About = () => {
             massa, ut molestie velit egestas molestie.
           </p>
         </div>
-        <div className="flex flex-col gap-2 text-center">
-          <h2 className="text-3xl font-bold">Our Vision</h2>
-          <p className="md:text-left px-2 md:px-3 lg:px-6">
+        <div className="flex flex-col gap-2 sm:gap-6 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold">Our Vision</h2>
+          <p className="md:text-left px-2 md:px-3 lg:px-6 text-[12px] md:text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean est
             mi, posuere in congue vel, pellentesque ut lorem. Etiam sit amet
             mattis ex. Sed et mauris et quam consequat varius in vel mauris.
@@ -35,9 +35,9 @@ const About = () => {
             Etiam ut tincidunt nisi. In hac habitasse platea dictumst.
           </p>
         </div>
-        <div className="flex flex-col gap-2 text-center">
-          <h2 className="text-3xl font-bold">Our Mission</h2>
-          <p className="md:text-left px-2 md:px-3 lg:px-6">
+        <div className="flex flex-col gap-2 sm:gap-6 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold">Our Mission</h2>
+          <p className="md:text-left px-2 md:px-3 lg:px-6 text-[12px] md:text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean est
             mi, posuere in congue vel, pellentesque ut lorem. Etiam sit amet
             mattis ex. Sed et mauris et quam consequat varius in vel mauris.
