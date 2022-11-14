@@ -20,7 +20,7 @@ const VerifyMobile = (props) => {
             <input
               type="tel"
               id="otp"
-              className="block w-full p-2.5 md:text-base bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 "
+              className="block w-full p-2.5 md:text-base bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-blue-500"
               placeholder="Enter OTP"
               required
             />
@@ -29,7 +29,7 @@ const VerifyMobile = (props) => {
         <div className="w-full text-center">
           <button
             type="submit"
-            className="text-sm md:text-base text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-sm md:text-base text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg w-full sm:w-auto px-5 py-2.5 text-center"
           >
             Verify
           </button>
