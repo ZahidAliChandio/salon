@@ -164,7 +164,7 @@ const Home = () => {
           {miniSliderpromo.map((s) => {
             return (
               <SwiperSlide
-                className="text-left bg-[#0064001A] rounded-lg mb-[50px] flex justify-center px-0"
+                className="text-left bg-[#0064001A] rounded-xl mb-[50px] flex justify-center py-0 px-0 overflow-hidden"
                 key={s.id}
               >
                 <SliderPromo data={s} />
