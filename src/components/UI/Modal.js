@@ -11,7 +11,7 @@ const BackDrop = (props) => {
 };
 const LoginOverlay = (props) => {
   return (
-    <div className="fixed top-[20vh] left-[50%] w-1/2 p-4 -translate-x-1/2 rounded-2xl bg-white accordian-shadow z-30">
+    <div className="fixed top-[20vh] left-[50%] w-2/5 p-4 -translate-x-1/2 rounded-2xl bg-white accordian-shadow z-30">
       <div className="content">{props.children}</div>
     </div>
   );
