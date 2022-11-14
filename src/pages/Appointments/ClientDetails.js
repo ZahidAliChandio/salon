@@ -7,7 +7,7 @@ const ClientDetails = ({ setShowDetail }) => {
   };
 
   return (
-    <div className="absolute -top-8 -right-12 w-11/12 bg-white  px-4 py-10 rounded-lg overflow-hidden detail-shadow z-20 h-fit">
+    <div className="absolute -top-8 -right-2 md:-right:-6lg:-right-12 w-11/12 bg-white  px-4 py-10 rounded-lg overflow-hidden detail-shadow z-20 h-fit">
       <button
         className="absolute top-3 lg:top-3 right-3"
         onClick={() => onClickHandler()} 
