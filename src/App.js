@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Login from "./pages/Login/Login";
 import VerifyMobile from "./pages/Login/VerifyMobile";
+import Register from "./pages/Register/Register";
 import Navbar from "./components/Navbar/Navbar";
 import Navigation from "./components/Navigation/Navigation";
 import Home from "./pages/Home/Home";
@@ -16,6 +17,7 @@ import { Routes, Route } from "react-router-dom";
 const App = () => {
   const [isLogin, setIsLogin] = useState(false);
   const [otpStatus, setOtpStatus] = useState(false);
+  const [isRegistered, setIsRegistered] = useState(true);
   const loginHandler = () => {
     setIsLogin(true);
   };
@@ -28,11 +30,24 @@ const App = () => {
   const otpSentHandler = () => {
     setOtpStatus(false);
   };
+  const registerHandler = () => {
+    setIsRegistered(false);
+  };
+  const registerCloseHandler = () => {
+    setIsRegistered(true);
+  };
   return (
     <div className="App">
       {isLogin && <Login onClose={logoutHandler} sendOtp={sendOtpHandler} />}
-      {otpStatus && (
+      {/* {otpStatus && (
         <VerifyMobile onSent={otpSentHandler} />
+      )} */}
+      {otpStatus && (
+        <Register
+          onSent={otpSentHandler}
+          onRegister={registerHandler}
+          onClose={registerCloseHandler}
+        />
       )}
       <Navigation />
       <Navbar onLogin={loginHandler} />

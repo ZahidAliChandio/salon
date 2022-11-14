@@ -4,7 +4,7 @@ const SliderPromo = (props) => {
   return (
     <div className="w-[552px] h-[318px] rounded-xl">
       <img
-        className="w-[552px] h-[318px] absolute -z-10 rounded-xl object-cover aspect-vedio"
+        className="absolute -z-10 rounded-xl object-cover aspect-vedio"
         src={sliderImg}
         alt=""
       />
@@ -13,7 +13,7 @@ const SliderPromo = (props) => {
         <p className="text-[22px] font-medium">
           Lorem ipsum dolor sit <br /> amet.
         </p>
-        <button className="bg-white text-black w-[158px] h-[48px] font-bold rounded-lg translate-y-32">
+        <button className="bg-white text-black w-[158px] h-[48px] font-bold rounded-lg">
           CTA Button
         </button>
       </div>
