@@ -10,8 +10,8 @@ const Appointments = () => {
   };
 
   return (
-    <div className="text-center lg:text-left px-10 lg:px-20 py-4">
-      <h2 className="my-8 text-xl font-bold">My Appointments</h2>
+    <div className="text-center lg:text-left px-10 lg:px-20 py-4 font-gillsans">
+      <h2 className="my-8 text-xl font-bold font-gillsans">My Appointments</h2>
       <div className="flex justify-between accordian-shadow rounded-3xl">
         {actions.map((action, index) => {
           const isActive = activeIndex === index ? true : false;
