@@ -15,7 +15,7 @@ const ServiceSlider = (props) => {
     dispatch(cartActions.removeCartItem(item));
   };
   return (
-    <div className="bg-white p-[14px] rounded-md accordian-shadow font-gillsans">
+    <div className="bg-white p-[14px] rounded-md accordian-shadow font-gillsans w-4/5 md:w-full">
       {/* <img src="" alt="" /> */}
       <div className="w-full h-[188px] rounded-md bg-[#EFEFEF]"></div>
       <p className="text-sm font-bold mt-2">Full arms & Underarms</p>

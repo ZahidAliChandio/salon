@@ -3,7 +3,7 @@ import Card from "../../components/UI/Card";
 
 const Checkout = (props) => {
   return (
-    <Card>
+    <Card className="!w-4/5 !md:w-full">
       <div className="flex flex-col justify-center items-center align-top w-full text-left">
           <div className="absolute -top-10 left-1/2 w-[70px] h-[70px] rounded-full bg-[#D1D1D1] -translate-x-1/2 z-50"></div>
           <div className="flex flex-col items-center mt-6 py-2">

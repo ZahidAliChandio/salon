@@ -15,7 +15,7 @@ const ServiceSlider2 = (props) => {
     dispatch(cartActions.removeCartItem(item));
   };
   return (
-    <div className="bg-white p-[14px] rounded-md border border-[#A3A3A3]">
+    <div className="bg-white p-[14px] rounded-md border border-[#A3A3A3] w-4/5 md:full">
       {/* <img src="" alt="" /> */}
       <div className="w-full h-[188px] bg-[#EFEFEF] rounded-md"></div>
       <p className="text-sm font-bold mt-2 text-center 2xl:text-left">{props.data.type}</p>

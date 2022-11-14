@@ -12,8 +12,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import MiniNavbar from "../../components/Navbar/MiniNavbar";
 import { Pagination, Navigation } from "swiper";
-import NextBtn from "../../components/buttons/NextBtn";
-import PrevBtn from "../../components/buttons/PrevBtn";
+import NextBtn from "../../components/UI/PrevBtn";
+import PrevBtn from "../../components/UI/NextBtn";
 
 const Home = () => {
   let miniNavArr = [
@@ -177,14 +177,14 @@ const Home = () => {
         <h2 className="text-[28px] font-semibold text-center py-[40px]">
           Quick Checkout
         </h2>
-        <div className=" relative bg-[#F4F4F4] py-4">
+        <div className="md:relative bg-[#F4F4F4] py-4">
           <Swiper
             pagination={{
               type: "fraction",
             }}
             navigation={false}
             modules={[Navigation]}
-            className="mySwiper !text-center !py-8"
+            className="mySwiper !relative md:!static !text-center !py-8"
             breakpoints={{
               1536: {
                 slidesPerView: diffMakeups.length > 5 ? 5 : diffMakeups.length,
@@ -202,7 +202,7 @@ const Home = () => {
             }}
             spaceBetween={20}
           >
-            <div className="absolute flex justify-between w-full top-36 z-20">
+            <div className="absolute flex justify-between w-full top-1/2 z-20">
               <NextBtn />
               <PrevBtn />
             </div>
@@ -217,45 +217,50 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[#006400] px-8 sm:px-20 md:px-24 lg:px-32 xl:px-40 2xl:px-48">
+      <div className="relative bg-[#006400] px-8 sm:px-20 md:px-24 lg:px-32 xl:px-40 2xl:px-48 z-0">
         <h1 className="text-[28px] pt-[40px] text-white text-center font-gillsans">
           Services @ 404
         </h1>
-        <Swiper
-          pagination={{
-            type: "fraction",
-          }}
-          navigation={false}
-          modules={[Navigation]}
-          className="mySwiper !py-4 !bg-none translate-y-24"
-          breakpoints={{
-            1536: {
-              slidesPerView: diffMakeups.length > 4 ? 4 : diffMakeups.length,
-            },
-            1280: {
-              slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
-            },
-            1024: {
-              slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
-            },
-            768: {
-              slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
-            },
-          }}
-          spaceBetween={14}
-        >
-          <div className="absolute flex justify-between w-full top-36 z-20">
-            <NextBtn />
-            <PrevBtn />
-          </div>
-          {itemArray.map((d) => {
-            return (
-              <SwiperSlide className="text-left rounded-xl" key={d.id}>
-                <ServiceSlider data={d} />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+        <div className="md:relative w-full -bottom-20">
+          <Swiper
+            pagination={{
+              type: "fraction",
+            }}
+            navigation={false}
+            modules={[Navigation]}
+            className="!relative md:!static mySwiper !py-4"
+            breakpoints={{
+              1536: {
+                slidesPerView: diffMakeups.length > 4 ? 4 : diffMakeups.length,
+              },
+              1280: {
+                slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
+              },
+              1024: {
+                slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
+              },
+              768: {
+                slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
+              },
+            }}
+            spaceBetween={14}
+          >
+            <div className="absolute flex justify-between w-full top-1/2 z-50">
+              <NextBtn />
+              <PrevBtn />
+            </div>
+            {itemArray.map((d) => {
+              return (
+                <SwiperSlide
+                  className="flex justify-center text-left rounded-xl z-0"
+                  key={d.id}
+                >
+                  <ServiceSlider data={d} />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
       </div>
       <div className="flex flex-wrap items-center justify-start pt-32 px-8 sm:px-20 md:px-24 lg:px-32 xl:px-40 2xl:px-48 md:justify-between">
         <div className="flex w-full justify-between font-gillsans">
@@ -266,38 +271,43 @@ const Home = () => {
             View All
           </button>
         </div>
-        <Swiper
-          pagination={{
-            type: "fraction",
-          }}
-          navigation={false}
-          modules={[Navigation]}
-          className="mySwiper !py-4 !bg-none"
-          breakpoints={{
-            1280: {
-              slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
-            },
-            1024: {
-              slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
-            },
-            768: {
-              slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
-            },
-          }}
-          spaceBetween={14}
-        >
-          <div className="absolute flex justify-between w-full top-36 z-20">
-            <NextBtn />
-            <PrevBtn />
-          </div>
-          {diffMakeups.map((d) => {
-            return (
-              <SwiperSlide className="text-left rounded-xl" key={d.id}>
-                <ServiceSlider2 data={d} />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+        <div className="md:relative w-full">
+          <Swiper
+            pagination={{
+              type: "fraction",
+            }}
+            navigation={false}
+            modules={[Navigation]}
+            className="mySwiper !relative md:!static !py-4 !bg-none"
+            breakpoints={{
+              1280: {
+                slidesPerView: diffMakeups.length >= 3 ? 3 : diffMakeups.length,
+              },
+              1024: {
+                slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
+              },
+              768: {
+                slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
+              },
+            }}
+            spaceBetween={14}
+          >
+            <div className="absolute flex justify-between w-full top-1/2 z-20">
+              <NextBtn />
+              <PrevBtn />
+            </div>
+            {diffMakeups.map((d) => {
+              return (
+                <SwiperSlide
+                  className="flex justify-center text-left rounded-xl "
+                  key={d.id}
+                >
+                  <ServiceSlider2 data={d} />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
       </div>
       <Whyus />
       <FAQs />

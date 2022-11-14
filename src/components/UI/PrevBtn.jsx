@@ -6,7 +6,7 @@ const NextBtn = () => {
 
   return (
     <button
-      className="absolute float-left left-0 z-20"
+      className="m-0 md:-ml-10 z-20"
       onClick={() => swiper.slidePrev()}
     >
       <i className="fa fa-arrow-left fa-2xl" aria-hidden="true"></i>

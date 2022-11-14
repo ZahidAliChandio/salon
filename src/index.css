@@ -33,6 +33,7 @@
 .swiper-button-disabled {
   display: none;
 }
+
 @keyframes close {
   0% {
     transform: translateY(0px);
