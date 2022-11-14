@@ -16,7 +16,7 @@ const Profile = () => {
           />
           <UserDetails title="Email" value="kajavats96@gmail.com" edit={true} />
           <UserDetails title="Date of birth" value="24-06-1996" edit={false} />
-          <UserDetails title="Gender" value="Male Female" edit={false} />
+          <UserDetails title="Gender" value1="Male" value2="Female" checkBoxes={true} edit={false} />
         </div>
         <UserProfile />
       </div>
