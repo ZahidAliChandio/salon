@@ -8,9 +8,9 @@ const SliderPromo = (props) => {
         src={sliderImg}
         alt=""
       />
-      <div className="text-white pt-[30px] pl-[24px]">
+      <div className="text-white pt-[30px] pl-[24px] font-montserrat">
         <p className="text-[14px]">Lorem, ipsum.</p>
-        <p className="text-[22px]">
+        <p className="text-[22px] font-medium">
           Lorem ipsum dolor sit <br /> amet.
         </p>
         <button className="bg-white text-black w-[158px] h-[48px] font-bold rounded-lg translate-y-32">

@@ -7,7 +7,7 @@ const Checkout = (props) => {
       <div className="flex flex-col justify-center items-center align-top w-full text-left">
           <div className="absolute -top-10 left-1/2 w-[70px] h-[70px] rounded-full bg-[#D1D1D1] -translate-x-1/2 z-50"></div>
           <div className="flex flex-col items-center mt-6 py-2">
-            <h4 className= "text-sm text-[13px] font-semibold w-full text-left">
+            <h4 className= "text-sm text-[13px] font-semibold w-full text-left font-gillsans">
               {props.data.heading}
             </h4>
             <ul className="text-[11px] my-2">
@@ -28,7 +28,7 @@ const Checkout = (props) => {
               <span className="text-gray-600">
                 <strike>{props.data.oldAmount}</strike>
               </span>
-              <span className="flex gap-1 font-bold text-green-600">
+              <span className="flex gap-1 font-bold text-[#006400] font-gillsans">
                 <span>Save</span>
                 <span>{props.data.save}</span>
               </span>

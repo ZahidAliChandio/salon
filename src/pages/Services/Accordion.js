@@ -14,7 +14,7 @@ const Accordion = ({ items }) => {
     return (
       <Fragment key={index}>
         <div
-          className={`flex items-center justify-between text-sm border-b border-gray-400 py-3 cursor-pointer mb-2 font-gillsans`}
+          className={`flex items-center justify-between text-sm lg:text-lg border-b border-gray-400 py-3 cursor-pointer mb-2 font-gillsans`}
           onClick={() => onClickHandler(index)}
         >
           {item.title}

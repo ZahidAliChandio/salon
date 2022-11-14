@@ -26,8 +26,8 @@ const FAQs = () => {
   return (
     <div className="py-10 px-8 sm:px-12 md:px-20 font-gillsans">
       <div>
-        <h2 className="text-3xl">FAQs</h2>
-        <p className="my-5">
+        <h2 className="text-2xl sm:text-3xl font-semibold">FAQs</h2>
+        <p className="my-5 text-sm sm:text-base">
           If you have any further questions you can contact us
         </p>
       </div>

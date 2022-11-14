@@ -10,7 +10,7 @@ const ItemDetails = ({ images, itemDetails, setShowDetailId }) => {
     setShowDetailId(null);
   };
   return (
-    <div className="absolute -top-8 -right-2 md:-right-6 lg:-right-8 w-full bg-white item-detail px-4 py-10 rounded-lg overflow-hidden detail-shadow z-20">
+    <div className="absolute -top-8 -right-2 md:-right-6 lg:-right-8 w-full bg-white item-detail px-4 py-10 rounded-lg overflow-hidden detail-shadow z-20 font-gillsans">
       <button
         className="absolute top-2 right-2 w-6"
         onClick={() => onClickHandler()}
@@ -41,7 +41,7 @@ const ItemDetails = ({ images, itemDetails, setShowDetailId }) => {
         <span className="text-gray-600">
           <strike>₹{itemDetails.previousPrice}</strike>
         </span>
-        <span className="flex gap-1 font-bold text-green-600">
+        <span className="flex gap-1 font-bold text-[#006400]">
           <span>Save</span>
           <span>₹{itemDetails.save}</span>
         </span>
@@ -56,7 +56,7 @@ const ItemDetails = ({ images, itemDetails, setShowDetailId }) => {
           return (
             <li className="flex items-center pl-1" key={index}>
               <span className="-left-2 relative inline-block bg-black rounded-full border w-2 h-2"></span>
-              <span className="text-sm">{point}</span>
+              <span className=" text-[11px sm:text-sm font-montserrat">{point}</span>
             </li>
           );
         })}

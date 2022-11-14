@@ -15,7 +15,7 @@ const AccordionFAQ = ({ items }) => {
       <Fragment key={index}>
         <div className="seperator">
           <div
-            className={`px-4 py-3 text-sm cursor-pointer rounded-xl accordian-shadow`}
+            className={`px-4 py-3 text-[12px] sm:text-lg rounded-xl accordian-shadow font-gillsans cursor-pointer`}
             onClick={() => onClickHandler(index)}
           >
             <div className="flex items-center justify-between font-medium">

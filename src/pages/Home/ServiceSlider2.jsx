@@ -25,9 +25,9 @@ const ServiceSlider2 = (props) => {
           <span className="text-gray-600">
             <strike>₹3,500</strike>
           </span>
-          <span className="flex gap-1 font-bold text-green-600">
+          <span className="flex gap-1 font-bold text-[#006400]">
             <span>Save</span>
-            <span>₹2000</span>
+            <span>₹ 2000</span>
           </span>
         </div>
         <AddButton className={"ml-4"}>

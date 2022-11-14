@@ -39,7 +39,7 @@ const ItemCard = ({ itemDetails, showDetailId, setShowDetailId }) => {
           return (
             <li className="flex items-center pl-1 font-montserrat font-medium" key={index}>
               <span className="-left-1 relative inline-block bg-black rounded-full border w-2 h-2"></span>
-              <span className="text-sm">{item}</span>
+              <span className="text-[11px] sm:text-sm">{item}</span>
             </li>
           );
         })}
@@ -49,9 +49,9 @@ const ItemCard = ({ itemDetails, showDetailId, setShowDetailId }) => {
         <span className="text-gray-600">
           <strike>₹{itemDetails.previousPrice}</strike>
         </span>
-        <span className="flex gap-1 font-bold text-green-600">
+        <span className="flex gap-1 font-bold text-[#006400]">
           <span>Save</span>
-          <span>₹{itemDetails.save}</span>
+          <span>₹ {itemDetails.save}</span>
         </span>
         <span className="flex gap-1 items-center font-bold text-yellow-400">
           <i className="fas fa-clock"></i>
@@ -59,7 +59,7 @@ const ItemCard = ({ itemDetails, showDetailId, setShowDetailId }) => {
         </span>
       </div>
       <button
-        className="font-bold text-green-600 text-sm"
+        className="font-bold text-[#006400] text-sm"
         onClick={() => onClickHandler(itemDetails.id)}
       >
         View Details

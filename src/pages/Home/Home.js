@@ -59,9 +59,9 @@ const Home = () => {
       heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
       li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
       li2: "a Rica Waxing - Full arms & Full legs",
-      currentPrice: "₹1, 500",
-      oldAmount: "₹3,500",
-      save: "₹2,000",
+      currentPrice: "₹ 1, 500",
+      oldAmount: "₹ 3,500",
+      save: "₹ 2,000",
       amount: 1,
     },
     {
@@ -70,9 +70,9 @@ const Home = () => {
       heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
       li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
       li2: "a Rica Waxing - Full arms & Full legs",
-      currentPrice: "₹1, 500",
-      oldAmount: "₹3,500",
-      save: "₹2,000",
+      currentPrice: "₹ 1, 500",
+      oldAmount: "₹ 3,500",
+      save: "₹ 2,000",
       amount: 1,
     },
     {
@@ -81,9 +81,9 @@ const Home = () => {
       heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
       li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
       li2: "a Rica Waxing - Full arms & Full legs",
-      currentPrice: "₹1, 500",
-      oldAmount: "₹3,500",
-      save: "₹2,000",
+      currentPrice: "₹ 1, 500",
+      oldAmount: "₹ 3,500",
+      save: "₹ 2,000",
       amount: 1,
     },
     {
@@ -92,9 +92,9 @@ const Home = () => {
       heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
       li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
       li2: "a Rica Waxing - Full arms & Full legs",
-      currentPrice: "₹1, 500",
-      oldAmount: "₹3,500",
-      save: "₹2,000",
+      currentPrice: "₹ 1, 500",
+      oldAmount: "₹ 3,500",
+      save: "₹ 2,000",
       amount: 1,
     },
     {
@@ -103,9 +103,9 @@ const Home = () => {
       heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
       li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
       li2: "a Rica Waxing - Full arms & Full legs",
-      currentPrice: "₹1, 500",
-      oldAmount: "₹3,500",
-      save: "₹2,000",
+      currentPrice: "₹ 1, 500",
+      oldAmount: "₹ 3,500",
+      save: "₹ 2,000",
       amount: 1,
     },
     {
@@ -114,9 +114,9 @@ const Home = () => {
       heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
       li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
       li2: "a Rica Waxing - Full arms & Full legs",
-      currentPrice: "₹1, 500",
-      oldAmount: "₹3,500",
-      save: "₹2,000",
+      currentPrice: "₹ 1, 500",
+      oldAmount: "₹ 3,500",
+      save: "₹ 2,000",
       amount: 1,
     },
     {
@@ -125,9 +125,9 @@ const Home = () => {
       heading: "Cleanup+Rica Wax it+ Brazilian Bikini wax",
       li1: "a Anti-Tan clean up/Fruit Clean up/Vit-C brightening clean up",
       li2: "a Rica Waxing - Full arms & Full legs",
-      currentPrice: "₹1, 500",
-      oldAmount: "₹3,500",
-      save: "₹2,000",
+      currentPrice: "₹ 1, 500",
+      oldAmount: "₹ 3,500",
+      save: "₹ 2,000",
       amount: 1,
     },
   ];
@@ -218,7 +218,7 @@ const Home = () => {
       </div>
 
       <div className="bg-[#006400] px-8 sm:px-20 md:px-24 lg:px-32 xl:px-40 2xl:px-48">
-        <h1 className="text-[28px] pt-[40px] text-white text-center">
+        <h1 className="text-[28px] pt-[40px] text-white text-center font-gillsans">
           Services @ 404
         </h1>
         <Swiper
@@ -258,11 +258,11 @@ const Home = () => {
         </Swiper>
       </div>
       <div className="flex flex-wrap items-center justify-start pt-32 px-8 sm:px-20 md:px-24 lg:px-32 xl:px-40 2xl:px-48 md:justify-between">
-        <div className="flex w-full justify-between">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-center">
+        <div className="flex w-full justify-between font-gillsans">
+          <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center">
             Different types of facials
           </h2>
-          <button className="text-[#006400] font-bold text-sm sm:text-lg">
+          <button className="text-[#006400] font-bold text-sm sm:text-md">
             View All
           </button>
         </div>
