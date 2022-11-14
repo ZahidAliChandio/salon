@@ -1,11 +1,10 @@
 import { useSelector } from "react-redux";
-import logo from "../../assets/images/chevron-right.svg";
 import search from "../../assets/images/search.svg";
 import shop from "../../assets/images/cart.svg";
 import user from "../../assets/images/user.svg";
 
 
-const Navbar = () => {
+const Navbar = (props) => {
   const items = useSelector((state) => state.cart.cartItems);
   const totalItems = items.reduce((curNum, item) => {
     return curNum + item.amount;
@@ -40,7 +39,7 @@ const Navbar = () => {
             </p>
             <p className="text-[#006400] font-bold text-[12px]">Cart</p>
           </div>
-          <button className="flex w-[106px] h-[44px] items-center justify-center bg-[#006400] p-1 rounded-lg text-white space-x-2">
+          <button className="flex w-[106px] h-[44px] items-center justify-center bg-[#006400] p-1 rounded-lg text-white space-x-2" onClick={props.onLogin}>
             <p>Login</p>
             <img src={user} alt="" />
           </button>

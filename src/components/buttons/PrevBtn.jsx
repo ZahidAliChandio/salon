@@ -9,7 +9,7 @@ const PrevBtn = () => {
       className="absolute float-right right-0 z-20"
       onClick={() => swiper.slideNext()}
     >
-      <i class="fa fa-arrow-right fa-2xl" aria-hidden="true"></i>
+      <i className="fa fa-arrow-right fa-2xl" aria-hidden="true"></i>
     </button>
   );
 };
