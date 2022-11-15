@@ -34,7 +34,7 @@ const ItemDetails = ({ images, itemDetails, setShowDetailId }) => {
         </Swiper>
       </div>
       <h4 className="text-sm font-medium mt-4 mb-1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectatur adipisicing elit.
       </h4>
       <div className="flex gap-2 my-3 text-sm">
         <span className="font-bold">₹{itemDetails.currentPrice}</span>
