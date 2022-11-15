@@ -4,7 +4,7 @@ import AddButton from "../../components/UI/AddButton";
 const Getapp = () => {
   return (
     <div className="mt-6">
-      <div className="h-[390px] flex justify-center items-center md:justify-end rounded-lg bg-[#FAFAFA] accordian-shadow px-4 sm:px-8 md:px-0 mx-6 sm:mx-20 md:mx-24 lg:mx-28 xl:mx-36">
+      <div className="h-[390px] flex justify-center items-center md:justify-end rounded-lg bg-[#FAFAFA] accordian-shadow px-4 sm:px-8 md:px-0 mx-0 sm:mx-20 md:mx-24 lg:mx-28 xl:mx-36">
         <div className="flex flex-col items-center justify-center text-center sm:text-left m-0 md:mr-20 lg:mr-32 w-full sm:w-fit">
           <div className="flex flex-col justify-center gap-2 sm:justify-start w-full font-gillsans">
             <h1 className="text-[28px] font-bold">Get the SaloTym app</h1>
