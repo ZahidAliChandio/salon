@@ -9,7 +9,7 @@ import Services from "./pages/Services/Services";
 import About from "./pages/About/About";
 import FAQs from "./pages/FAQs/FAQs";
 import Appointments from "./pages/Appointments/Appointments";
-import Booking from "./pages/Booking/Booking";
+import Booking from "./pages/Booking/Bookings";
 import Booked from "./pages/Booking/Booked";
 import Profile from "./pages/Profile/Profile";
 import Footer from "./components/Footer/Footer";
