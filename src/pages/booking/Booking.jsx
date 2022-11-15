@@ -1,5 +1,5 @@
-import BookingAddress from "./BookingAddress";
 import BookingSlots from "./BookingSlots";
+import BookingAddress from "./BookingAddress";
 
 const Booking = () => {
   const timings = [
