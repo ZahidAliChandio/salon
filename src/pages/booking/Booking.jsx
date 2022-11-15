@@ -1,5 +1,5 @@
 import BookingAddress from "./BookingAddress";
-import BookingDetailsTiming from "./BookingDetailsTiming";
+import BookingSlots from "./BookingSlots";
 
 const BookingDetails = () => {
   const timings = [
@@ -22,7 +22,7 @@ const BookingDetails = () => {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-7 2xl:grid-cols-8 gap-3 md:gap-4">
         {timings.map((timing) => {
           return (
-            <BookingDetailsTiming key={timings.id} timings={timing.timings} />
+            <BookingSlots key={timings.id} timings={timing.timings} />
           );
         })}
       </div>
