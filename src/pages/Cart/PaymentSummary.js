@@ -1,6 +1,6 @@
 const PaymentSummary = () => {
   return (
-    <div className="w-11/12 sm:w-4/5 md:w-2/3 lg:w-1/2">
+    <div className="w-full">
       <h2 className="my-4 text-center md:my-8 text-xl md:text-2xl lg:text-3xl font-bold">
         Payment Summary
       </h2>
