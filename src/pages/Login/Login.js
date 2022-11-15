@@ -13,13 +13,13 @@ const Login = (props) => {
         <div className="mt-4 mb-6">
           <label
             for="phone"
-            class="block mb-2 text-sm md:text-base font-medium text-gray-900"
+            className="block mb-2 text-sm md:text-base font-medium text-gray-900"
           >
             Enter your Mobile Number
           </label>
           <div className="flex">
-            <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300 dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
-              <i class="fas fa-phone-alt"></i>
+            <span className="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300 dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+              <i className="fas fa-phone-alt"></i>
             </span>
             <input
               type="tel"

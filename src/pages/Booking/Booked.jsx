@@ -12,7 +12,7 @@ const Booked = () => {
           </span>
           <span className="w-[69px] h-[69px]">
             <i
-              class="fa fa-check absolute top-1/2 left-1/2 text-[69px] text-white -translate-x-1/2 -translate-y-1/2"
+              className="fa fa-check absolute top-1/2 left-1/2 text-[69px] text-white -translate-x-1/2 -translate-y-1/2"
               aria-hidden="true"
             ></i>
           </span>

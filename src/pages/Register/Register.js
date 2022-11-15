@@ -12,13 +12,13 @@ const Register = (props) => {
         <div className="my-4">
           <label
             for="small"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 md:text-base"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 md:text-base"
           >
             Gender
           </label>
           <select
             id="small"
-            class="block p-2 mb-6 w-full text-sm md:text-base text-gray-900 bg-gray-50 rounded-lg border-2 focus:border-blue-500 outline-none"
+            className="block p-2 mb-6 w-full text-sm md:text-base text-gray-900 bg-gray-50 rounded-lg border-2 focus:border-blue-500 outline-none"
           >
             <option selected>Select Gender</option>
             <option value="male">Male</option>
@@ -29,14 +29,14 @@ const Register = (props) => {
         <div>
           <label
             for="visitors"
-            class="block mb-2 text-sm md:text-base font-medium text-gray-900 dark:text-gray-300"
+            className="block mb-2 text-sm md:text-base font-medium text-gray-900 dark:text-gray-300"
           >
             Age
           </label>
           <input
             type="number"
             id="visitors"
-            class="block w-full p-2.5 text-sm md:text-base bg-gray-50 border border-gray-300 text-gray-900 rounded-lg  focus:outline-blue-500"
+            className="block w-full p-2.5 text-sm md:text-base bg-gray-50 border border-gray-300 text-gray-900 rounded-lg  focus:outline-blue-500"
             placeholder=""
             required
           />

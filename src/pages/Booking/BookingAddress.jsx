@@ -6,7 +6,7 @@ const BookingAddress = () => {
       <div className="flex flex-col flex-wrap justify-center items-center gap-2">
         <div className="w-full flex justify-between">
           <div className="flex items-center gap-1">
-            <i class="fa-solid fa-location-dot"></i>
+            <i className="fa-solid fa-location-dot"></i>
             <h1 className="font-semibold text-sm">Address</h1>
           </div>
           <button className="flex gap-1 items-center text-[12px] font-semibold text-[#FFB600] mb-2">
