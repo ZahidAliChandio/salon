@@ -3,6 +3,7 @@ import Login from "./pages/Login/Login";
 import VerifyMobile from "./pages/Login/VerifyMobile";
 import Register from "./pages/Register/Register";
 import Navbar from "./components/Navbar/Navbar";
+import Cart from "./pages/Cart/Cart";
 import Navigation from "./components/Navigation/Navigation";
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
@@ -59,6 +60,7 @@ const App = () => {
         <Route path="/booking" element={<Booking />} />
         <Route path="/booked" element={<Booked />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/about" element={<About />} />
         <Route path="/faqs" element={<FAQs />} />

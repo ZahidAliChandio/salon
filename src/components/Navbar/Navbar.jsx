@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import search from "../../assets/images/search.svg";
 import shop from "../../assets/images/cart.svg";
 import user from "../../assets/images/user.svg";
+import { Link } from 'react-router-dom'
 
 
 const Navbar = (props) => {
@@ -32,13 +33,13 @@ const Navbar = (props) => {
           </button>
         </div>
         <div className="flex space-x-6">
-          <div className="relative flex space-x-2 items-center">
+          <Link to="/cart" className="relative flex space-x-2 items-center">
             <img className="w-[19px] h-[19px]" src={shop} alt="" />
             <p className="absolute bg-[#006400] rounded-full w-[15px] h-[15px] text-[11px] text-center top-1 right-[22px] text-white">
               {totalItems > 0 ? totalItems : 0}
             </p>
             <p className="text-[#006400] font-bold text-[12px]">Cart</p>
-          </div>
+          </Link>
           <button className="flex w-[106px] h-[44px] items-center justify-center bg-[#006400] p-1 rounded-lg text-white space-x-2" onClick={props.onLogin}>
             <p>Login</p>
             <img src={user} alt="" />
