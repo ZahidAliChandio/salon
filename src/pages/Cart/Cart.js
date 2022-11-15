@@ -4,7 +4,7 @@ import PaymentSummary from "./PaymentSummary";
 const ServiceCart = () => {
   return (
     <div className="relative flex flex-col items-center w-full h-[84vh] bg-zinc-100 font-gillsans border">
-      <div className="flex flex-col items-center w-11/12 rounded-full sm:w-4/5 md:w-2/3 lg:w-1/2">
+      <div className="flex flex-col items-center w-[95%] rounded-full sm:w-4/5 md:w-2/3 lg:w-1/2">
         <h2 className="pt-12 pb-16 font-bold text-xl md:text-2xl lg:text-3xl">
           Service cart
         </h2>
