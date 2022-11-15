@@ -1,5 +1,5 @@
-import Card from "../UI/Card";
-import AddButton from "../UI/AddButton";
+import Card from "../../components/UI/Card";
+import AddButton from "../../components/UI/AddButton";
 const BookingAddress = () => {
   return (
     <Card>
