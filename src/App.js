@@ -9,6 +9,8 @@ import Services from "./pages/Services/Services";
 import About from "./pages/About/About";
 import FAQs from "./pages/FAQs/FAQs";
 import Appointments from "./pages/Appointments/Appointments";
+import Booking from "./pages/Booking/Booking";
+import Booked from "./pages/Booking/Booked";
 import Profile from "./pages/Profile/Profile";
 import Footer from "./components/Footer/Footer";
 import Address from "./pages/Address/Address";
@@ -54,6 +56,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/appointments" element={<Appointments />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/booked" element={<Booked />} />
         <Route path="/services" element={<Services />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/about" element={<About />} />

@@ -9,6 +9,8 @@ const Navigation = () => {
       <Link to="/about">About</Link>
       <Link to="/faqs">FAQs</Link>
       <Link to="/address">Address</Link>
+      <Link to="/booking">Booking</Link>
+      <Link to="/booked">Booked</Link>
     </div>
   );
 };

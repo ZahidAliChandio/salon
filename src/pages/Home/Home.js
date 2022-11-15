@@ -1,4 +1,4 @@
-import { Fragment, useCallback, useRef } from "react";
+import { Fragment } from "react";
 import SliderPromo from "./SliderPromo";
 import Checkout from "./Checkout";
 import ServiceSlider from "./ServiceSlider";
@@ -14,8 +14,6 @@ import MiniNavbar from "../../components/Navbar/MiniNavbar";
 import { Pagination, Navigation } from "swiper";
 import NextBtn from "../../components/UI/PrevBtn";
 import PrevBtn from "../../components/UI/NextBtn";
-import BookingDone from "../../components/booking/BookingDone";
-import BookingDetails from "../../components/booking/BookingDetails";
 
 const Home = () => {
   let miniNavArr = [
@@ -142,8 +140,6 @@ const Home = () => {
 
   return (
     <Fragment>
-      <BookingDone />
-      <BookingDetails />
       <div className="flex flex-wrap bg-white drop-shadow-sm shadow-[#0000001F] justify-center gap-10 pb-[34px] pt-[24px] border shadow-2xl">
         {miniNavArr.map((n) => {
           return <MiniNavbar key={n.id} data={n} />;

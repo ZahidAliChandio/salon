@@ -1,7 +1,7 @@
 import ProfileBg from "../../assets/images/profile-bg.svg";
 import Profile from "../../assets/images/profile.svg";
-import AddButton from "../UI/AddButton";
-const BookingDone = () => {
+import AddButton from "../../components/UI/AddButton";
+const Booked = () => {
   return (
     <div className="w-full flex flex-col lg:flex-row justify-center gap-10 md:gap-24 align-middle items-center px-6 sm:p-4 py-5">
       <div className="flex flex-col items-center justify-center">
@@ -38,4 +38,4 @@ const BookingDone = () => {
   );
 };
 
-export default BookingDone;
+export default Booked;
