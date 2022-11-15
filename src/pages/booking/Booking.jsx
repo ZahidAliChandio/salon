@@ -1,7 +1,7 @@
 import BookingAddress from "./BookingAddress";
 import BookingSlots from "./BookingSlots";
 
-const BookingDetails = () => {
+const Booking = () => {
   const timings = [
     { id: 0, timings: "11:00am - 10:15pm" },
     { id: 1, timings: "11:00am - 10:15pm" },
@@ -31,4 +31,4 @@ const BookingDetails = () => {
   );
 };
 
-export default BookingDetails;
+export default Booking;
