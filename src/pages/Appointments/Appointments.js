@@ -10,7 +10,7 @@ const Appointments = () => {
   };
 
   return (
-    <div className="text-center lg:text-left px-10 lg:px-20 py-4 font-gillsans">
+    <div className="text-center lg:text-left px-3 sm:px-10 lg:px-20 py-4 font-gillsans">
       <h2 className="my-8 text-xl font-bold font-gillsans">My Appointments</h2>
       <div className="flex justify-between accordian-shadow rounded-3xl">
         {actions.map((action, index) => {
@@ -26,12 +26,12 @@ const Appointments = () => {
           );
         })}
       </div>
-      <div className="apointment details mt-6">
-        <Client image="" name="Diamond facial" price="1,500" date="Mon, 26 Setpember" time="11:00 am"/>
-        <Client image="" name="Diamond facial" price="1,500" date="Mon, 26 Setpember" time="11:00 am"/>
-        <Client image="" name="Diamond facial" price="1,500" date="Mon, 26 Setpember" time="11:00 am"/>
-        <Client image="" name="Diamond facial" price="1,500" date="Mon, 26 Setpember" time="11:00 am"/>
-        <Client image="" name="Diamond facial" price="1,500" date="Mon, 26 Setpember" time="11:00 am"/>
+      <div className="flex flex-wrap justify-center md:justify-start apointment details mt-6">
+        <Client image="profile" name="Diamond facial" price="1,500" date="Mon, 26 Setpember" time="11:00 am"/>
+        <Client image="profile" name="Diamond facial" price="1,500" date="Mon, 26 Setpember" time="11:00 am"/>
+        <Client image="profile" name="Diamond facial" price="1,500" date="Mon, 26 Setpember" time="11:00 am"/>
+        <Client image="profile" name="Diamond facial" price="1,500" date="Mon, 26 Setpember" time="11:00 am"/>
+        <Client image="profile" name="Diamond facial" price="1,500" date="Mon, 26 Setpember" time="11:00 am"/>
       </div>
     </div>
   );
