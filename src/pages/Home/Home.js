@@ -203,8 +203,8 @@ const Home = () => {
             spaceBetween={20}
           >
             <div className="absolute flex justify-between w-full top-1/2 z-20">
-              <NextBtn />
-              <PrevBtn />
+              <NextBtn className="!m-0"/>
+              <PrevBtn className="!m-0"/>
             </div>
             {itemArray.map((d) => {
               return (
