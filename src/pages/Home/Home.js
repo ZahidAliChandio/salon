@@ -217,7 +217,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="relative bg-[#006400] px-8 sm:px-20 md:px-24 lg:px-32 xl:px-40 2xl:px-48 z-0">
+      <div className="relative bg-[#006400] px-2 sm:px-20 md:px-24 lg:px-32 xl:px-40 2xl:px-48 z-0">
         <h1 className="text-[28px] pt-[40px] text-white text-center font-gillsans">
           Services @ 404
         </h1>
@@ -262,7 +262,7 @@ const Home = () => {
           </Swiper>
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-start pt-32 px-8 sm:px-20 md:px-24 lg:px-32 xl:px-40 2xl:px-48 md:justify-between">
+      <div className="flex flex-wrap items-center justify-start pt-32 px-2 sm:px-20 md:px-24 lg:px-32 xl:px-40 2xl:px-48 md:justify-between">
         <div className="flex w-full justify-between font-gillsans">
           <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center">
             Different types of facials
