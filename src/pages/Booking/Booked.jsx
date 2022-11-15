@@ -18,7 +18,7 @@ const Booked = () => {
           </span>
         </span>
       </div>
-      <div className="flex flex-wrap flex-col justify-center items-center border-2 border-black rounded-2xl text-center lg:text-left p-4 w-full sm:w-11/12 md:w-2/3 lg:w-2/5 space-y-8 font-gillsans">
+      <div className="flex flex-wrap flex-col justify-center items-center border-2 border-black rounded-2xl text-center lg:text-left p-4 w-full sm:w-11/12 md:w-2/3 lg:w-2/5 gap-8 font-gillsans">
         <div>
           <h1 className="font-bold text-lg">Hey, Elwish</h1>
           <h1 className="font-bold text-lg">Thanks for your booking!</h1>
