@@ -34,9 +34,7 @@ const Booked = () => {
           Check Appointment
         </AddButton>
       </div>
-      <button className="underline underline-offset-4">
-        Back to Home page
-      </button>
+      <button className="text-gray-500 font-gillsans">Back to Home page</button>
     </div>
   );
 };
