@@ -4,7 +4,7 @@ import UserProfile from "./UserProfile";
 
 const Profile = () => {
   return (
-    <div className="text-center lg:text-left px-6 md:px-10 lg:px-20 py-4">
+    <div className="text-center lg:text-left px-6 md:px-10 lg:px-20 py-4 mb-6">
       <h2 className="my-8 text-2xl font-bold">My Profile</h2>
       <div className="flex justify-between flex-col-reverse md:flex-row gap-8">
         <div className="w-full">

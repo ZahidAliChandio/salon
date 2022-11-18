@@ -24,7 +24,7 @@ const Booking = () => {
       <DatePicker />
       <div className="text-[10px] md:text-sm grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-7 2xl:grid-cols-8 gap-3 md:gap-4">
         {timings.map((timing) => {
-          return <BookingSlots key={timings.id} timings={timing.timings} />;
+          return <BookingSlots key={timing.id} timings={timing.timings} />;
         })}
       </div>
       <BookingAddress />

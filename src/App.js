@@ -12,6 +12,7 @@ import FAQs from "./pages/FAQs/FAQs";
 import Appointments from "./pages/Appointments/Appointments";
 import Booking from "./pages/Booking/Booking";
 import Booked from "./pages/Booking/Booked";
+import Payment from "./pages/Payment/Payment";
 import Profile from "./pages/Profile/Profile";
 import Footer from "./components/Footer/Footer";
 import Address from "./pages/Address/Address";
@@ -58,6 +59,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/appointments" element={<Appointments />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/payment" element={<Payment />} />
         <Route path="/booked" element={<Booked />} />
         <Route path="/services" element={<Services />} />
         <Route path="/cart" element={<Cart />} />

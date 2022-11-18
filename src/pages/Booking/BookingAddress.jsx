@@ -1,5 +1,6 @@
 import Card from "../../components/UI/Card";
 import AddButton from "../../components/UI/AddButton";
+import { Link } from "react-router-dom";
 const BookingAddress = () => {
   return (
     <Card>
@@ -18,12 +19,13 @@ const BookingAddress = () => {
           <p>
             Ajnara Homes Tower-A, AJNARA HOMES, Bhangel, Ghaziabad, Uttar
             Pradesh 201009, India
-          </p>
-          <p>sbdf,d fn</p>
+          </p>          
         </div>
-        <AddButton className="p-0 sm:!p-2 !w-full md:w-3/6 font-semibold">
-          Proceed To Payment
-        </AddButton>
+        <Link to="/payment" className="w-11/12 mt-4">
+          <AddButton className="p-0 sm:!p-2 !w-full md:w-3/6 font-semibold">
+            Proceed To Payment
+          </AddButton>
+        </Link>
       </div>
     </Card>
   );
