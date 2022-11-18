@@ -7,8 +7,11 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Navigation } from "swiper";
+import { useState } from "react";
+
 const DatePicker = () => {
   function getDaysInMonth(month, year) {
+    console.log("running");
     var date = new Date(year, month, 1);
     var days = [];
     while (date.getMonth() === month) {
@@ -19,7 +22,9 @@ const DatePicker = () => {
   }
   const daysWords = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   const date = new Date();
-  const dateNum = getDaysInMonth(date.getMonth(), date.getFullYear());
+  const [dateNum, setDateNum] = useState(
+    getDaysInMonth(date.getMonth(), date.getFullYear())
+  );
   return (
     <div className="w-full text-center">
       <Swiper
@@ -27,7 +32,9 @@ const DatePicker = () => {
         modules={[Navigation]}
         className="mySwiper"
         initialSlide={date.getMonth()}
-        onSlideChange={() => console.log(Swiper)}
+        onSlideChange={(swiper) =>
+          setDateNum(getDaysInMonth(swiper.activeIndex, date.getFullYear()))
+        }
       >
         <SwiperSlide>January</SwiperSlide>
         <SwiperSlide>Febuary</SwiperSlide>
