@@ -10,7 +10,7 @@ const Payment = () => {
         <PaymentSummary />
         <PaymentMethod />
 
-        <Link to="/booking" className="my-8">
+        <Link to="/booked" className="my-8">
           <AddButton className="!flex !w-full justify-center font-bold text-base lg:text-lg py-2 lg:py-3 !px-14 sm:!px-24 md:!px-32 !rounded-full">
             PROCEED TO PAYMENT
           </AddButton>

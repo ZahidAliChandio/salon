@@ -1,6 +1,8 @@
 import ProfileBg from "../../assets/images/profile-bg.svg";
 import Profile from "../../assets/images/profile.svg";
 import AddButton from "../../components/UI/AddButton";
+import { Link } from "react-router-dom";
+
 const Booked = () => {
   return (
     <div className="w-full flex flex-col lg:flex-row justify-center gap-40 md:gap-24 align-middle items-center px-6 sm:p-4 py-5">
@@ -34,7 +36,7 @@ const Booked = () => {
           Check Appointment
         </AddButton>
       </div>
-      <button className="text-gray-500 font-gillsans">Back to Home page</button>
+      <Link to="/" className="text-gray-500 font-gillsans font-bold">Back to Home page</Link>
     </div>
   );
 };
