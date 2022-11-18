@@ -3,7 +3,7 @@ import Profile from "../../assets/images/profile.svg";
 import AddButton from "../../components/UI/AddButton";
 const Booked = () => {
   return (
-    <div className="w-full flex flex-col lg:flex-row justify-center gap-20 md:gap-24 align-middle items-center px-6 sm:p-4 py-5">
+    <div className="w-full flex flex-col lg:flex-row justify-center gap-40 md:gap-24 align-middle items-center px-6 sm:p-4 py-5">
       <div className="flex flex-col items-center justify-center">
         <span className="relative">
           <img src={ProfileBg} alt="Background" />
@@ -18,7 +18,7 @@ const Booked = () => {
           </span>
         </span>
       </div>
-      <div className="flex flex-wrap flex-col justify-center items-center border-2 border-black rounded-2xl text-center lg:text-left p-4 w-full sm:w-11/12 md:w-2/3 lg:w-2/5 gap-8 font-gillsans">
+      <div className="flex flex-wrap flex-col justify-center items-center border-2 border-black rounded-2xl text-center lg:text-left p-4 w-full sm:w-11/12 md:w-2/3 lg:w-2/5 space-y-8 font-gillsans">
         <div>
           <h1 className="font-bold text-lg">Hey, Elwish</h1>
           <h1 className="font-bold text-lg">Thanks for your booking!</h1>
@@ -34,9 +34,7 @@ const Booked = () => {
           Check Appointment
         </AddButton>
       </div>
-      <button className="underline underline-offset-4">
-        Back to Home page
-      </button>
+      <button className="text-gray-500 font-gillsans">Back to Home page</button>
     </div>
   );
 };
