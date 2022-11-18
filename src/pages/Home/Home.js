@@ -140,7 +140,7 @@ const Home = () => {
 
   return (
     <Fragment>
-      <div className="flex flex-wrap bg-white drop-shadow-sm shadow-[#0000001F] justify-center gap-10 pb-[34px] pt-[24px] border shadow-2xl">
+      <div className="flex flex-wrap bg-white drop-shadow-sm shadow-[#0000001F] justify-center gap-10 pb-8 pt-6 border shadow-2xl">
         {miniNavArr.map((n) => {
           return <MiniNavbar key={n.id} data={n} />;
         })}

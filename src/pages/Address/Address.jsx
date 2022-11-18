@@ -2,7 +2,7 @@ import AddressCard from "./AddressCard";
 
 const Address = () => {
   return (
-    <div className="px-20 pt-12">
+    <div className="px-20 py-12">
       <h1 className="text-[28px] font-semibold font-gillsans">Address</h1>
       <div className="flex gap-2 items-center my-6">
         <i className="fa-solid fa-plus text-white bg-[#006400] p-1 rounded-full"></i>
