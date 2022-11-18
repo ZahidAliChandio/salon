@@ -111,7 +111,7 @@ const PaymentMethod = () => {
         </div>
         <div className="my-4">
           <div className="flex items-center gap-1">
-            <i class="fas fa-calendar-alt"></i>
+            <i className="fas fa-calendar-alt"></i>
             <h1 className="font-bold text-base sm:text-lg my-4">
               Selected date and time
             </h1>
