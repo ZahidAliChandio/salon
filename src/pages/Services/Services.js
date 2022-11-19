@@ -39,15 +39,15 @@ const Services = () => {
 
   return (
     <Fragment>
-      <div className="relative mt-8 px-4 sm:px-8 md:px-8 lg:px-16 xl:px-20 ">
+      <div className="relative mt-8 px-4 sm:px-8 xl:px-16 2xl:px-20 ">
         <div className="flex justify-center">
           <div className="flex items-center justify-center font-medium rounded-lg bg-lime-100 h-16 w-4/5 sm:w-3/4 md:w-1/2 lg:w-2/5">
             <h3>Facial</h3>
           </div>
         </div>
-        <div className="flex flex-col items-center gap-4 lg:flex-row lg:items-start sm:gap-8 lg:gap-12 mt-6">
-          {windowWidth >= 1024 && <Accordion items={items} />}
-          {windowWidth <= 1023 && <ImageList data={mobileViewData} />}
+        <div className="flex flex-col items-center gap-4 md:flex-row md:items-start sm:gap-8 xl:gap-12 mt-6">
+          {windowWidth >= 768 && <Accordion items={items} />}
+          {windowWidth < 768 && <ImageList data={mobileViewData} />}
           <Item />
         </div>
       </div>
