@@ -20,8 +20,11 @@ const Navbar = (props) => {
   return (
     <div className=" w-full z-30">
       <div className="flex justify-around gap-4 lg:gap-0 w-full flex-wrap items-center pt-[25px] pb-[35px] bg-white border-b-2 border-[#C7C7C7] font-gillsans">
-        <div className="mx-1">{/* <img src={logo} alt="Logo" /> */}</div>
-        <div className="w-3/4 flex border-2 border-[#C7C7C7] rounded-3xl px-2">
+        <div className="mx-1 order-1">
+          {/* <img src={shop} alt="Logo" /> */}
+          <p>LOGO</p>
+        </div>
+        <div className="w-3/4 flex border-2 border-[#C7C7C7] rounded-3xl px-2 order-3 sm:order-2">
           <button className="px-[10px]">
             <img src={search} alt="" className="w-[14px] h-[14px]" />
           </button>
@@ -41,7 +44,7 @@ const Navbar = (props) => {
             <i className="fas fa-times-circle text-sm text-[#C7C7C7]"></i>
           </button>
         </div>
-        <div className="flex space-x-6">
+        <div className="flex space-x-6 order-2 sm:order-3">
           <Link to="/cart" className="relative flex space-x-2 items-center">
             <img className="w-[19px] h-[19px]" src={shop} alt="" />
             <p className="absolute bg-[#006400] rounded-full w-[15px] h-[15px] text-[11px] text-center top-1 right-[22px] text-white">
