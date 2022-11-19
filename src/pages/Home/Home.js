@@ -173,7 +173,7 @@ const Home = () => {
           })}
         </Swiper>
       </div>
-      <div className="lg:py-2 p-0 bg-[#F4F4F4] mb-12 px-0 sm:px-12 md:px-16 xl:px-36">
+      <div className="lg:py-2 p-0 bg-[#F4F4F4] mb-12 px-0 sm:px-12 md:px-16 xl:px-[5.5rem]">
         <h2 className="text-[28px] font-semibold text-center py-[40px]">
           Quick Checkout
         </h2>
@@ -217,7 +217,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="relative bg-[#006400] px-2 sm:px-20 md:px-24 lg:px-32 xl:px-40 2xl:px-48 z-0">
+      <div className="relative bg-[#006400] px-2 sm:px-16 md:px-20 lg:px-24 xl:px-32 2xl:px-48 z-0">
         <h1 className="text-[28px] pt-[40px] text-white text-center font-gillsans">
           Services @ 404
         </h1>
@@ -243,7 +243,7 @@ const Home = () => {
                 slidesPerView: diffMakeups.length >= 2 ? 2 : diffMakeups.length,
               },
             }}
-            spaceBetween={14}
+            spaceBetween={5}
           >
             <div className="absolute flex justify-between w-full top-1/2 z-50">
               <PrevBtn white={true}/>
@@ -262,7 +262,7 @@ const Home = () => {
           </Swiper>
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-start pt-32 px-2 sm:px-20 md:px-24 lg:px-32 xl:px-40 2xl:px-48 md:justify-between">
+      <div className="flex flex-wrap items-center justify-start pt-32 px-2 sm:px-16 md:px-20 lg:px-24 xl:px-32 2xl:px-48 md:justify-between">
         <div className="flex w-full justify-between font-gillsans">
           <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center">
             Different types of facials

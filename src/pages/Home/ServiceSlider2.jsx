@@ -15,24 +15,23 @@ const ServiceSlider2 = (props) => {
     dispatch(cartActions.removeCartItem(item));
   };
   return (
-    <div className="bg-white p-[14px] rounded-md border border-[#A3A3A3] w-4/5 md:full">
+    <div className="bg-white p-[14px] rounded-md border border-[#A3A3A3] w-4/5 md:w-full">
       {/* <img src="" alt="" /> */}
       <div className="w-full h-[188px] bg-[#EFEFEF] rounded-md"></div>
-      <p className="text-sm font-bold mt-2 text-center 2xl:text-left">
+      <p className="text-sm font-bold mt-2 text-left">
         {props.data.type}
       </p>
-      <div className="flex flex-col justify-between gap-2 my-3 text-sm items-center px-0 sm:px-8 md:px-0 sm:flex-row md:flex-col">
+      <div className="flex justify-between my-3 text-sm items-center px-0">
         <div className="flex gap-2">
           <span className="font-bold">₹1,500</span>
           <span className="text-gray-600">
             <strike>₹3,500</strike>
           </span>
-          <span className="flex gap-1 font-bold text-[#006400]">
-            <span>Save</span>
-            <span>₹ 2000</span>
+          <span className="font-semibold text-[#006400]">
+            <span>Save ₹ 2000</span>            
           </span>
         </div>
-        <AddButton className={"ml-4"}>
+        <AddButton className={"m-0"}>
           {!itemAmount ? (
             <span
               onClick={() => addCartItemHandler(props.data)}
