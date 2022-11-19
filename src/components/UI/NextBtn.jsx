@@ -9,7 +9,7 @@ const PrevBtn = (props) => {
       className={`${props.className} m-0 md:-mr-10 z-20`}
       onClick={() => swiper.slideNext()}
     >
-      <i className="fa fa-arrow-right fa-2xl" aria-hidden="true"></i>
+      <i className={`fa fa-arrow-right fa-2xl ${props.white?'text-white':""}`} aria-hidden="true"></i>
     </button>
   );
 };
