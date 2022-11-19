@@ -65,3 +65,8 @@
     opacity: 1;
   }
 }
+
+div.swiper-button-prev,
+div.swiper-button-next {
+  color: white;
+}
