@@ -24,13 +24,19 @@ const DatePicker = () => {
   const [dateNum, setDateNum] = useState(
     getDaysInMonth(date.getMonth(), date.getFullYear())
   );
+
+  const [active, setActive] = useState(null);
+  const onClickHandler = (index) => {
+    setActive(index);
+  };
+
   return (
     <div className="w-full text-center bg-[#006400] text-white">
-      <div className="px-10 sm:px-20 md:px-24 lg:px-28 pt-10 text-sm sm:text-lg md:text-xl text-center items-center">
+      <div className="px-12 sm:px-20 md:px-24 lg:px-28 pt-10 text-sm sm:text-lg md:text-xl text-center items-center">
         <Swiper
           style={{
             "--swiper-navigation-size": "30px",
-            "@media (max-width:300px)": { "--swiper-navigation-size": "100px" },
+            "@media (maxWidth:300px)": { "--swiper-navigation-size": "100px" },
           }}
           navigation={true}
           modules={[Navigation]}
@@ -65,12 +71,19 @@ const DatePicker = () => {
             250: { slidesPerView: 7 },
           }}
         >
-          {dateNum.map((day) => {
+          {dateNum.map((day, index) => {
             return (
               <SwiperSlide className="flex flex-col justify-center items-center text-center">
                 <div className="flex flex-col gap-2">
                   <span>{daysWords[day.getDay()]}</span>
-                  <span className="flex items-center justify-center rounded-full w-7 h-7 hover:cursor-pointer hover:bg-white hover:text-black">
+                  <span
+                    onClick={() => onClickHandler(index)}
+                    className={`flex items-center justify-center rounded-full w-7 h-7 hover:cursor-pointer ${
+                      active === index
+                        ? "bg-white text-black"
+                        : "bg-none text-white"
+                    }`}
+                  >
                     {day.getDate()}
                   </span>
                 </div>
