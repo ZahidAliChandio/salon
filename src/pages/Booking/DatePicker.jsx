@@ -11,7 +11,6 @@ import { useState } from "react";
 
 const DatePicker = () => {
   function getDaysInMonth(month, year) {
-    console.log("running");
     var date = new Date(year, month, 1);
     var days = [];
     while (date.getMonth() === month) {
@@ -27,9 +26,12 @@ const DatePicker = () => {
   );
   return (
     <div className="w-full text-center bg-[#006400] text-white">
-      <div className="px-28 pt-10 text-xl text-center items-center">
+      <div className="px-10 sm:px-20 md:px-24 lg:px-28 pt-10 text-sm sm:text-lg md:text-xl text-center items-center">
         <Swiper
-          style={{ "--swiper-navigation-size": "30px" }}
+          style={{
+            "--swiper-navigation-size": "30px",
+            "@media (max-width:300px)": { "--swiper-navigation-size": "100px" },
+          }}
           navigation={true}
           modules={[Navigation]}
           className="mySwiper"
@@ -55,8 +57,13 @@ const DatePicker = () => {
       <div className="py-6">
         <Swiper
           className="mySwiper"
-          slidesPerView={7}
           initialSlide={date.getDate() - 1}
+          breakpoints={{
+            1024: {
+              slidesPerView: 14,
+            },
+            250: { slidesPerView: 7 },
+          }}
         >
           {dateNum.map((day) => {
             return (

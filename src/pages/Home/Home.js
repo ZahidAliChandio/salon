@@ -246,8 +246,8 @@ const Home = () => {
             spaceBetween={5}
           >
             <div className="absolute flex justify-between w-full top-1/2 z-50">
-              <PrevBtn white={true}/>
-              <NextBtn white={true}/>
+              <PrevBtn white={true} />
+              <NextBtn white={true} />
             </div>
             {itemArray.map((d) => {
               return (
