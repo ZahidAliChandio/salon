@@ -12,8 +12,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import MiniNavbar from "../../components/Navbar/MiniNavbar";
 import { Pagination, Navigation } from "swiper";
-import NextBtn from "../../components/UI/PrevBtn";
-import PrevBtn from "../../components/UI/NextBtn";
+import PrevBtn from "../../components/UI/PrevBtn";
+import NextBtn from "../../components/UI/NextBtn";
 
 const Home = () => {
   let miniNavArr = [
@@ -173,7 +173,7 @@ const Home = () => {
           })}
         </Swiper>
       </div>
-      <div className="lg:py-2 p-0 bg-[#F4F4F4] mb-12 px-2 sm:px-12 md:px-16 xl:px-20">
+      <div className="lg:py-2 p-0 bg-[#F4F4F4] mb-12 px-0 sm:px-12 md:px-16 xl:px-36">
         <h2 className="text-[28px] font-semibold text-center py-[40px]">
           Quick Checkout
         </h2>
@@ -200,11 +200,11 @@ const Home = () => {
               },
               640: { slidesPerView: 1 },
             }}
-            spaceBetween={20}
+            spaceBetween={10}
           >
             <div className="absolute flex justify-between w-full top-1/2 z-20">
-              <NextBtn className="!m-0" />
-              <PrevBtn className="!m-0" />
+              <PrevBtn className="!mr-0 sm:!mr-5" />
+              <NextBtn className="!ml-0 sm:!ml-5" />
             </div>
             {itemArray.map((d) => {
               return (
@@ -246,8 +246,8 @@ const Home = () => {
             spaceBetween={14}
           >
             <div className="absolute flex justify-between w-full top-1/2 z-50">
-              <NextBtn white={true}/>
               <PrevBtn white={true}/>
+              <NextBtn white={true}/>
             </div>
             {itemArray.map((d) => {
               return (
@@ -293,8 +293,8 @@ const Home = () => {
             spaceBetween={14}
           >
             <div className="absolute flex justify-between w-full top-1/2 z-20">
-              <NextBtn />
               <PrevBtn />
+              <NextBtn />
             </div>
             {diffMakeups.map((d) => {
               return (

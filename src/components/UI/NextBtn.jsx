@@ -1,7 +1,7 @@
 import { React } from "react";
 import { useSwiper } from "swiper/react";
 
-const PrevBtn = (props) => {
+const NextBtn = (props) => {
   const swiper = useSwiper();
 
   return (
@@ -14,4 +14,4 @@ const PrevBtn = (props) => {
   );
 };
 
-export default PrevBtn;
+export default NextBtn;
