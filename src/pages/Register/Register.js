@@ -44,7 +44,7 @@ const Register = (props) => {
         <div className="w-full text-center mt-5">
           <button
             type="submit"
-            className="text-sm md:text-base text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg w-full sm:w-auto px-5 py-2.5 text-center"
+            className="text-sm md:text-base text-white bg-[#006400] hover:bg-[#055a05] focus:ring-4 focus:outline-none focus:ring-[#2e8a2e] font-medium rounded-lg w-full sm:w-auto px-5 py-2.5 text-center"
           >
             Register
           </button>
