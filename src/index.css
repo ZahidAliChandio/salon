@@ -70,3 +70,32 @@ div.swiper-button-prev,
 div.swiper-button-next {
   color: white;
 }
+.enter-animation {
+  animation: enter 1s ease-in-out;
+}
+@keyframes enter {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 48vh;
+  }
+  100% {
+    height: 98vh;
+  }
+}
+.exit-animation {
+  animation: exit 1s ease-in-out;
+}
+@keyframes exit {
+  0% {
+    height: 98vh;
+  }
+  50% {
+    height: 48vh;
+  }
+  100% {
+    height: 0vh;
+  }
+}
+
