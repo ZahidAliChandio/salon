@@ -2,7 +2,7 @@ import Whyuscomp from "./Whyuscomp";
 
 const Whyus = () => {
   return (
-    <div className="grid grid-cols-1 items-center xl:grid-cols-2 mx-2 px-8 md:px-12 lg:px-20 my-8 gap-6">
+    <div className="grid grid-cols-1 items-center xl:grid-cols-2 mx-2 px-8 md:px-12 lg:pl-20 lg:pr-36 my-8 gap-6">
       <div className=" mb-2 w-full sm:w-4/5 text-left justify-self-center font-gillsans">
         <h1 className="text-[28px] font-semibold text-center xl:text-left">Why Choose Salon Tym?</h1>
         <p className="font-light text-[12px] sm:text-[18px] mt-4">

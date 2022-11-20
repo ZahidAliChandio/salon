@@ -11,7 +11,7 @@ const ServiceCart = () => {
         </h2>
         <CartItem />
         <PaymentSummary />
-        <div className="absolute bottom-8 flex justify-center w-11/12 sm:w-4/5 md:w-2/3 lg:w-1/2">          
+        <div className="fixed bottom-8 py-4 flex justify-center bg-zinc-100 w-full">          
           <Link to="/booking">
             <AddButton className="!flex !w-full justify-center font-bold text-base lg:text-lg py-2 lg:py-3 !px-14 sm:!px-24 md:!px-32 !rounded-full">
               PROCEED TO SLOTS

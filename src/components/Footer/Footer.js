@@ -16,11 +16,11 @@ const Footer = () => {
           <span><a href="/" className="relative cursor-pointer after:content('a') after:absolute after:left-0 after:bottom-0 after:border-b-2 after:border-zinc-300 after:w-0 after:transition-all after:duration-500 after:hover:w-full">FAQ</a></span>
           <span><a href="/" className="relative cursor-pointer after:content('a') after:absolute after:left-0 after:bottom-0 after:border-b-2 after:border-zinc-300 after:w-0 after:transition-all after:duration-500 after:hover:w-full">Terms and Conditions</a></span>
         </div>        
-        <div className="flex items-top text-center flex-col gap-2 text-sm w-full sm:w-auto">
+        <div className="flex items-top flex-col gap-2 text-sm w-full sm:w-auto">
           <h3>info@salontym.com</h3>
           <span>+91 000 000 0000</span>
         </div>
-        <div className="flex flex-col gap-2 items-center w-full sm:w-auto">
+        <div className="flex flex-col gap-2 w-full sm:w-auto">
           <span className="flex items-center gap-2  text-sm">
             <span className="flex items-center justify-center overflow-hidden w-[28px] h-[28px] bg-white rounded-full">
               <i className="fa-brands fa-instagram text-lg text-green-700 font-bold"></i>
