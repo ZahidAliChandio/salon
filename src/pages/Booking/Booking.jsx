@@ -21,12 +21,12 @@ const Booking = () => {
   return (
     <div className="flex flex-col justify-center items-center lg:pd-8">
       <div className="bg-[#006400] w-full text-white text-center relative flex justify-center items-center">
-        <button className="bg-white absolute left-4 p-2 w-[35px] h-[35px] rounded-full flex items-center">
+        {/* <button className="bg-white absolute left-4 p-2 w-[35px] h-[35px] rounded-full flex items-center">
           <i
             className={`fa fa-arrow-left fa-2xl text-black text-2xl`}
             aria-hidden="true"
           ></i>
-        </button>
+        </button> */}
         <h1 className="font-bold text-lg my-4">Book Appointment</h1>
       </div>
       <DatePicker />
